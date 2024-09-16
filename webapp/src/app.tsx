@@ -31,6 +31,11 @@ const App = (props: Props): JSX.Element => {
     const dispatch = useAppDispatch()
 
     useEffect(() => {
+        const cookies = document.cookie
+        console.log('Cookies:', cookies)
+    }, [])
+
+    useEffect(() => {
         dispatch(fetchLanguage())
         dispatch(fetchMe())
         dispatch(fetchClientConfig())

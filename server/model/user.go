@@ -94,6 +94,17 @@ type Session struct {
 	UpdateAt    int64                  `json:"update_at,omitempty"`
 }
 
+type Profile struct {
+	Sub           string  `json:"sub"`
+	Name          string  `json:"name"`
+	Picture       string  `json:"picture"`
+	UpdatedAt     int64   `json:"updated_at"`
+	Username      *string `json:"username"`
+	CreatedAt     int64   `json:"created_at"`
+	Email         string  `json:"email"`
+	EmailVerified bool    `json:"email_verified"`
+}
+
 func UserFromJSON(data io.Reader) (*User, error) {
 	var user User
 	if err := json.NewDecoder(data).Decode(&user); err != nil {

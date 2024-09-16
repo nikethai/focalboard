@@ -133,6 +133,16 @@ func (a *API) panicHandler(next http.Handler) http.Handler {
 
 func (a *API) requireCSRFToken(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		// ignore CSRF token check for certain paths
+		ignorePath := []string{"/api/v2/oidc"}
+		currentPath := r.URL.Path
+		for _, path := range ignorePath {
+			if path == currentPath {
+				next.ServeHTTP(w, r)
+				return
+			}
+		}
+
 		if !a.checkCSRFToken(r) {
 			a.logger.Error("checkCSRFToken FAILED")
 			a.errorResponse(w, r, model.NewErrBadRequest("checkCSRFToken FAILED"))

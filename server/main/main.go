@@ -121,7 +121,7 @@ func main() {
 
 	if pDBConfig != nil && len(*pDBConfig) > 0 {
 		config.DBConfigString = *pDBConfig
-		// Don't echo, as the confix string may contain passwords
+		// Don't echo, as the config string may contain passwords
 		logger.Info("DBConfigString overridden from commandline")
 	}
 

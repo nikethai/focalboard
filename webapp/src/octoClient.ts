@@ -85,6 +85,24 @@ class OctoClient {
         return false
     }
 
+    async loginOIDC(): Promise<boolean> {
+        const path = '/api/v2/login-oidc'
+        const response = await fetch(this.getBaseURL() + path, {
+            method: 'POST',
+            headers: this.headers(),
+        })
+        if (response.status !== 200) {
+            return false
+        }
+
+        const responseJson = (await this.getJson(response, {})) as {url?: string}
+        if (responseJson.url) {
+            window.location.href = responseJson.url
+        }
+
+        return true
+    }
+
     async logout(): Promise<boolean> {
         const path = '/api/v2/logout'
         const response = await fetch(this.getBaseURL() + path, {

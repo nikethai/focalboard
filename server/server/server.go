@@ -3,6 +3,7 @@ package server
 import (
 	"database/sql"
 	"fmt"
+	"github.com/mattermost/focalboard/server/oauth"
 	"net"
 	"net/http"
 	"os"
@@ -75,6 +76,13 @@ func New(params Params) (*Server, error) {
 
 	authenticator := auth.New(params.Cfg, params.DBStore, params.PermissionsService)
 
+	oauth, err := oauth.New(params.Cfg)
+	if err != nil {
+		params.Logger.Error("Unable to initialize OAuth", mlog.Err(err))
+
+		return nil, errors.New("unable to initialize oauth")
+	}
+
 	// if no ws adapter is provided, we spin up a websocket server
 	wsAdapter := params.WSAdapter
 	if wsAdapter == nil {
@@ -131,6 +139,7 @@ func New(params Params) (*Server, error) {
 
 	appServices := app.Services{
 		Auth:             authenticator,
+		OAuth:            oauth,
 		Store:            params.DBStore,
 		FilesBackend:     filesBackend,
 		Webhook:          webhookClient,

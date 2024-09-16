@@ -4,6 +4,7 @@ import (
 	"github.com/mattermost/focalboard/server/model"
 	"github.com/mattermost/focalboard/server/services/auth"
 	"github.com/mattermost/focalboard/server/utils"
+	"golang.org/x/oauth2"
 
 	"github.com/mattermost/mattermost/server/public/shared/mlog"
 
@@ -77,9 +78,9 @@ func (a *App) GetUsersList(userIDs []string) ([]*model.User, error) {
 }
 
 // Login create a new user session if the authentication data is valid.
-func (a *App) Login(username, email, password, mfaToken string) (string, error) {
+func (a *App) Login(username, email, password, mfaToken string, isOidc bool) (string, error) {
 	var user *model.User
-	if username != "" {
+	if !isOidc && username != "" {
 		var err error
 		user, err = a.store.GetUserByUsername(username)
 		if err != nil && !model.IsErrNotFound(err) {
@@ -102,7 +103,7 @@ func (a *App) Login(username, email, password, mfaToken string) (string, error) 
 		return "", errors.New("invalid username or password")
 	}
 
-	if !auth.ComparePassword(user.Password, password) {
+	if !isOidc && !auth.ComparePassword(user.Password, password) {
 		a.metrics.IncrementLoginFailCount(1)
 		a.logger.Debug("Invalid password for user", mlog.String("userID", user.ID))
 		return "", errors.New("invalid username or password")
@@ -129,6 +130,30 @@ func (a *App) Login(username, email, password, mfaToken string) (string, error) 
 
 	// TODO: MFA verification
 	return session.Token, nil
+}
+
+func (a *App) CheckUserExist(email string) bool {
+	if email != "" {
+		var err error
+		_, err = a.store.GetUserByEmail(email)
+		if err != nil && model.IsErrNotFound(err) {
+			return false
+		}
+		return true
+	}
+	return false
+}
+
+func (a *App) GetAuthoriseURL() string {
+	return a.oauth.GetAuthoriseURL()
+}
+
+func (a *App) ExchangeCode(code string) (*oauth2.Token, error) {
+	return a.oauth.ExchangeCode(code)
+}
+
+func (a *App) GetUserInfo(token *oauth2.Token) (*model.Profile, error) {
+	return a.oauth.GetUserInfo(token)
 }
 
 // Logout invalidates the user session.
@@ -169,6 +194,45 @@ func (a *App) RegisterUser(username, email, password string) error {
 	}
 
 	// TODO: Move this into the config
+	passwordSettings := auth.PasswordSettings{
+		MinimumLength: 6,
+	}
+
+	err := auth.IsPasswordValid(password, passwordSettings)
+	if err != nil {
+		return errors.Wrap(err, "Invalid password")
+	}
+
+	_, err = a.store.CreateUser(&model.User{
+		ID:          utils.NewID(utils.IDTypeUser),
+		Username:    username,
+		Email:       email,
+		Password:    auth.HashPassword(password),
+		MfaSecret:   "",
+		AuthService: a.config.AuthMode,
+		AuthData:    "",
+	})
+	if err != nil {
+		return errors.Wrap(err, "Unable to create the new user")
+	}
+
+	return nil
+}
+
+func (a *App) RegisterUserOIDC(username, email, password, lastname, firstname string) error {
+	var user *model.User
+
+	if user == nil && email != "" {
+		var err error
+		user, err = a.store.GetUserByEmail(email)
+		if err != nil && !model.IsErrNotFound(err) {
+			return err
+		}
+		if user != nil {
+			return errors.New("The email already exists")
+		}
+	}
+
 	passwordSettings := auth.PasswordSettings{
 		MinimumLength: 6,
 	}

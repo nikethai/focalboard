@@ -20,6 +20,8 @@ import (
 func (a *API) registerAuthRoutes(r *mux.Router) {
 	// personal-server specific routes. These are not needed in plugin mode.
 	r.HandleFunc("/login", a.handleLogin).Methods("POST")
+	r.HandleFunc("/login-oidc", a.handleLoginOIDC).Methods("POST")
+	r.HandleFunc("/oidc", a.handleOIDCCallback).Methods("GET")
 	r.HandleFunc("/logout", a.sessionRequired(a.handleLogout)).Methods("POST")
 	r.HandleFunc("/register", a.handleRegister).Methods("POST")
 	r.HandleFunc("/teams/{teamID}/regenerate_signup_token", a.sessionRequired(a.handlePostTeamRegenerateSignupToken)).Methods("POST")
@@ -84,7 +86,7 @@ func (a *API) handleLogin(w http.ResponseWriter, r *http.Request) {
 	auditRec.AddMeta("type", loginData.Type)
 
 	if loginData.Type == "normal" {
-		token, err := a.app.Login(loginData.Username, loginData.Email, loginData.Password, loginData.MfaToken)
+		token, err := a.app.Login(loginData.Username, loginData.Email, loginData.Password, loginData.MfaToken, false)
 		if err != nil {
 			a.errorResponse(w, r, model.NewErrUnauthorized("incorrect login"))
 			return
@@ -101,6 +103,67 @@ func (a *API) handleLogin(w http.ResponseWriter, r *http.Request) {
 	}
 
 	a.errorResponse(w, r, model.NewErrBadRequest("invalid login type"))
+}
+
+func (a *API) handleLoginOIDC(w http.ResponseWriter, r *http.Request) {
+	url := a.app.GetAuthoriseURL()
+	jsonStringResponse(w, http.StatusOK, `{"url": "`+url+`"}`)
+}
+
+func (a *API) handleOIDCCallback(w http.ResponseWriter, r *http.Request) {
+	code := r.URL.Query().Get("code")
+	auditRec := a.makeAuditRecord(r, "login", audit.Fail)
+	if code == "" {
+		http.Error(w, "Missing authorization code", http.StatusBadRequest)
+		return
+	}
+
+	oidcToken, err := a.app.ExchangeCode(code)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+
+	profile, err := a.app.GetUserInfo(oidcToken)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusBadRequest)
+		return
+	}
+
+	isUserExisted := a.app.CheckUserExist(profile.Email)
+	if !isUserExisted {
+		parts := strings.Fields(profile.Name)
+		// Take the last element as the first name
+		firstName := parts[len(parts)-1]
+
+		// Join the remaining parts as the last name
+		lastName := strings.Join(parts[:len(parts)-1], " ")
+		// User does not exist, create user
+		err = a.app.RegisterUserOIDC("", profile.Email, utils.GenerateRandomString(12), lastName, firstName)
+		if err != nil {
+			http.Error(w, err.Error(), http.StatusInternalServerError)
+			return
+		}
+	}
+
+	token, err := a.app.Login(profile.Email, profile.Email, utils.GenerateRandomString(12), "", true)
+	if err != nil {
+		a.errorResponse(w, r, model.NewErrUnauthorized("incorrect login"))
+		return
+	}
+
+	cookie := http.Cookie{
+		Name:     auth.SessionCookieToken,
+		Value:    token, // Replace with actual token
+		Path:     "/",
+		HttpOnly: true,                 // Makes the cookie inaccessible to JavaScript
+		Secure:   true,                 // Use this for HTTPS connections
+		SameSite: http.SameSiteLaxMode, // Prevent CSRF, Lax is good for login cookies
+	}
+	http.SetCookie(w, &cookie)
+
+	auditRec.Success()
+	http.Redirect(w, r, "/", http.StatusSeeOther)
 }
 
 func (a *API) handleLogout(w http.ResponseWriter, r *http.Request) {

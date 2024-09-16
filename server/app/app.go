@@ -1,6 +1,7 @@
 package app
 
 import (
+	"github.com/mattermost/focalboard/server/oauth"
 	"io"
 	"sync"
 	"time"
@@ -43,6 +44,7 @@ type fileBackend interface {
 
 type Services struct {
 	Auth             *auth.Auth
+	OAuth            *oauth.OAuth
 	Store            store.Store
 	FilesBackend     fileBackend
 	Webhook          *webhook.Client
@@ -58,6 +60,7 @@ type App struct {
 	config              *config.Configuration
 	store               store.Store
 	auth                *auth.Auth
+	oauth               *oauth.OAuth
 	wsAdapter           ws.Adapter
 	filesBackend        fileBackend
 	webhook             *webhook.Client
@@ -85,6 +88,7 @@ func New(config *config.Configuration, wsAdapter ws.Adapter, services Services) 
 		config:              config,
 		store:               services.Store,
 		auth:                services.Auth,
+		oauth:               services.OAuth,
 		wsAdapter:           wsAdapter,
 		filesBackend:        services.FilesBackend,
 		webhook:             services.Webhook,

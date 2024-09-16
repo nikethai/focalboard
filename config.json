@@ -21,5 +21,11 @@
 	"authMode": "native",
 	"logging_cfg_file": "",
 	"audit_cfg_file": "",
-	"enablePublicSharedBoards": false
+	"enablePublicSharedBoards": false,
+    "oauth_client_id": "",
+    "oauth_client_secret": "",
+    "oauth_callback_url": "",
+    "oauth_auth_url": "",
+    "oauth_token_url": "",
+    "oauth_profile_url": "e"
 }

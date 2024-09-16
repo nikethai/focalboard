@@ -69,6 +69,15 @@ type Configuration struct {
 
 	NotifyFreqCardSeconds  int `json:"notify_freq_card_seconds" mapstructure:"notify_freq_card_seconds"`
 	NotifyFreqBoardSeconds int `json:"notify_freq_board_seconds" mapstructure:"notify_freq_board_seconds"`
+
+	// OAuth
+	OAuthClientID     string `json:"oauth_client_id" mapstructure:"oauth_client_id"`
+	OAuthClientSecret string `json:"oauth_client_secret" mapstructure:"oauth_client_secret"`
+	OAuthCallbackURL  string `json:"oauth_callback_url" mapstructure:"oauth_callback_url"`
+	OAuthScope        string `json:"oauth_scope" mapstructure:"oauth_scope"`
+	OAuthAuthURL      string `json:"oauth_auth_url" mapstructure:"oauth_auth_url"`
+	OAuthTokenURL     string `json:"oauth_token_url" mapstructure:"oauth_token_url"`
+	OAuthProfileURL   string `json:"oauth_profile_url" mapstructure:"oauth_profile_url"`
 }
 
 // ReadConfigFile read the configuration from the filesystem.

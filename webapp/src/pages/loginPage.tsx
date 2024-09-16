@@ -1,7 +1,7 @@
 // Copyright (c) 2015-present Mattermost, Inc. All Rights Reserved.
 // See LICENSE.txt for license information.
 import React, {useState} from 'react'
-import {Link, Redirect, useLocation, useHistory} from 'react-router-dom'
+import {Link, Redirect, useHistory, useLocation} from 'react-router-dom'
 import {FormattedMessage} from 'react-intl'
 
 import {useAppDispatch, useAppSelector} from '../store/hooks'
@@ -16,13 +16,16 @@ const LoginPage = () => {
     const [password, setPassword] = useState('')
     const [errorMessage, setErrorMessage] = useState('')
     const dispatch = useAppDispatch()
-    const loggedIn = useAppSelector<boolean|null>(getLoggedIn)
+    const loggedIn = useAppSelector<boolean | null>(getLoggedIn)
     const queryParams = new URLSearchParams(useLocation().search)
     const history = useHistory()
 
-    const handleLogin = async (): Promise<void> => {
-        const logged = await client.login(username, password)
+    const handleLogin = async (isSSO?: boolean): Promise<void> => {
+        const logged = isSSO ? await client.loginOIDC() : await client.login(username, password)
         if (logged) {
+            if (isSSO) {
+                return
+            }
             await dispatch(fetchMe())
             if (queryParams) {
                 history.push(queryParams.get('r') || '/')
@@ -85,6 +88,17 @@ const LoginPage = () => {
                     />
                 </Button>
             </form>
+            <div style={{width: '100%', display: 'flex', justifyContent: 'center', marginBottom: '8px'}}>
+                <Button
+                    filled={true}
+                    onClick={() => handleLogin(true)}
+                >
+                    <FormattedMessage
+                        id='login.sso-button'
+                        defaultMessage='Log in with SSO'
+                    />
+                </Button>
+            </div>
             <Link to='/register'>
                 <FormattedMessage
                     id='login.register-button'
