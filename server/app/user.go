@@ -1,8 +1,8 @@
 package app
 
 import (
-	"github.com/mattermost/focalboard/server/model"
 	mmModel "github.com/mattermost/mattermost/server/public/model"
+	"github.com/nikethai/focalboard/server/model"
 )
 
 func (a *App) GetTeamUsers(teamID string, asGuestID string) ([]*model.User, error) {

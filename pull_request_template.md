@@ -16,7 +16,7 @@ A description of what this pull request does, as well as QA test steps (if appli
 <!--
 If this pull request addresses a Github issue, please link the relevant issue, e.g.
 
-  Fixes https://github.com/mattermost/focalboard/issues/XXXXX
+  Fixes https://github.com/nikethai/focalboard/issues/XXXXX
 
 Otherwise, link the JIRA ticket.
 -->

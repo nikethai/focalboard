@@ -6,8 +6,8 @@ weight: 1
 ---
 
 Please contact us via one of the following:
-* [File a GitHub issue](https://github.com/mattermost/focalboard/issues) for bugs or feature ideas
-* [Start a GitHub discussion](https://github.com/mattermost/focalboard/discussions)
+* [File a GitHub issue](https://github.com/nikethai/focalboard/issues) for bugs or feature ideas
+* [Start a GitHub discussion](https://github.com/nikethai/focalboard/discussions)
 
 Focalboard is an open source project that is in early access. Help shape its future by sharing what you'd like to see with the community.
 

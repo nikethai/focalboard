@@ -7,13 +7,13 @@ weight: 3
 
 Follow these steps to upgrade an existing Personal Server installation that was previously set up with the [setup guide here](../ubuntu).
 
-Use the URL of the Ubuntu archive package, `focalboard-server-linux-amd64.tar.gz`, from the appropriate [release in GitHub](https://github.com/mattermost/focalboard/releases).
+Use the URL of the Ubuntu archive package, `focalboard-server-linux-amd64.tar.gz`, from the appropriate [release in GitHub](https://github.com/nikethai/focalboard/releases).
 
 Create and use a clean directory, or delete any existing packages first, then run:
 
 ```
 # Download the new version (e.g. 0.9.2 here, check the release for the latest one)
-wget https://github.com/mattermost/focalboard/releases/download/v0.9.2/focalboard-server-linux-amd64.tar.gz
+wget https://github.com/nikethai/focalboard/releases/download/v0.9.2/focalboard-server-linux-amd64.tar.gz
 tar -xvzf focalboard-server-linux-amd64.tar.gz
 
 # Stop the server

@@ -6,8 +6,8 @@ package app
 import (
 	"fmt"
 
-	"github.com/mattermost/focalboard/server/model"
-	"github.com/mattermost/focalboard/server/utils"
+	"github.com/nikethai/focalboard/server/model"
+	"github.com/nikethai/focalboard/server/utils"
 )
 
 func (a *App) CreateCard(card *model.Card, boardID string, userID string, disableNotify bool) (*model.Card, error) {

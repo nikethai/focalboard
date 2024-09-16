@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/mattermost/focalboard/server/model"
-	"github.com/mattermost/focalboard/server/services/store"
+	"github.com/nikethai/focalboard/server/model"
+	"github.com/nikethai/focalboard/server/services/store"
 
 	mmModel "github.com/mattermost/mattermost/server/public/model"
 )

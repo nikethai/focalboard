@@ -26,11 +26,11 @@ On Linux, to build the Linux app:
 
 ## Fork and clone the project source code
 
-Fork the [Focalboard GitHub repo](https://github.com/mattermost/focalboard), and clone it locally.
+Fork the [Focalboard GitHub repo](https://github.com/nikethai/focalboard), and clone it locally.
 
 ## Build and run from the terminal
 
-Follow the steps in the [main readme file](https://github.com/mattermost/focalboard#building-the-server). In summary, to build and run the server:
+Follow the steps in the [main readme file](https://github.com/nikethai/focalboard#building-the-server). In summary, to build and run the server:
 
 ```
 make prebuild
@@ -93,7 +93,7 @@ Before checking-in commits, run: `make ci`, which is simlar to the ci.yml workfl
 
 ## Running into problems or have questions?
 
-If you run into any issues with the steps here, or have any general questions, please don't hesitate to reach out either on [GitHub](https://github.com/mattermost/focalboard) or our [Mattermost community channel](https://community.mattermost.com/core/channels/focalboard).
+If you run into any issues with the steps here, or have any general questions, please don't hesitate to reach out either on [GitHub](https://github.com/nikethai/focalboard) or our [Mattermost community channel](https://community.mattermost.com/core/channels/focalboard).
 
 We welcome everyone, and appreciate any feedback.
 

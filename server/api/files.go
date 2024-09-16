@@ -13,12 +13,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/mattermost/focalboard/server/app"
+	"github.com/nikethai/focalboard/server/app"
 
 	"github.com/gorilla/mux"
-	"github.com/mattermost/focalboard/server/model"
+	"github.com/nikethai/focalboard/server/model"
 
-	"github.com/mattermost/focalboard/server/services/audit"
+	"github.com/nikethai/focalboard/server/services/audit"
 
 	mmModel "github.com/mattermost/mattermost/server/public/model"
 

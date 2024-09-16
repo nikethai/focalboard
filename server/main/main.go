@@ -10,10 +10,10 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/mattermost/focalboard/server/model"
-	"github.com/mattermost/focalboard/server/server"
-	"github.com/mattermost/focalboard/server/services/config"
-	"github.com/mattermost/focalboard/server/services/permissions/localpermissions"
+	"github.com/nikethai/focalboard/server/model"
+	"github.com/nikethai/focalboard/server/server"
+	"github.com/nikethai/focalboard/server/services/config"
+	"github.com/nikethai/focalboard/server/services/permissions/localpermissions"
 )
 import (
 	"github.com/mattermost/mattermost/server/public/shared/mlog"

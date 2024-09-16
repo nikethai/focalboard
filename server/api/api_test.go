@@ -8,8 +8,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/mattermost/focalboard/server/model"
 	"github.com/mattermost/mattermost/server/public/shared/mlog"
+	"github.com/nikethai/focalboard/server/model"
 	"github.com/stretchr/testify/require"
 )
 

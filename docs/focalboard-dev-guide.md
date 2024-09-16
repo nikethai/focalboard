@@ -3,14 +3,14 @@
 **Important**: Effective September 15th, 2023, Mattermost Boards transitions to being fully community supported as the Focalboard Plugin. Mattermost will no longer be maintaining this plugin - this includes bug fixes and feature additions. Instead, the plugin is open-sourced and made available indefinitely for community contributions in GitHub.
 
 To build your own version of it:
-1. Build [mattermost-plugin](https://github.com/mattermost/focalboard/tree/main/mattermost-plugin) in the [Focalboard repo](https://github.com/mattermost/focalboard)
+1. Build [mattermost-plugin](https://github.com/nikethai/focalboard/tree/main/mattermost-plugin) in the [Focalboard repo](https://github.com/nikethai/focalboard)
 2. Upload it as a [custom plugin to your Mattermost server](https://developers.mattermost.com/integrate/admin-guide/admin-plugins-beta/#custom-plugins)
 
 Here are the steps in more detail:
 
 ### Building the Focalboard plugin
 
-Fork the [Focalboard repo](https://github.com/mattermost/focalboard), clone it locally, and follow the steps in the readme to set up your dev environment.
+Fork the [Focalboard repo](https://github.com/nikethai/focalboard), clone it locally, and follow the steps in the readme to set up your dev environment.
 
 Install dependencies:
 ```
@@ -31,7 +31,7 @@ cd mattermost-plugin
 make dist
 ```
 
-Refer to the [dev-release.yml](https://github.com/mattermost/focalboard/blob/main/.github/workflows/dev-release.yml#L168) workflow for the up-to-date commands that are run as part of CI.
+Refer to the [dev-release.yml](https://github.com/nikethai/focalboard/blob/main/.github/workflows/dev-release.yml#L168) workflow for the up-to-date commands that are run as part of CI.
 
 ### Uploading the plugin to your server
 
@@ -56,7 +56,7 @@ First, build and run Mattermost locally:
 6. Run `make run-server` in Mattermost
 
 Now, to build and deploy the plugin:
-1. Clone / fork [mattermost/focalboard](https://github.com/mattermost/focalboard)
+1. Clone / fork [mattermost/focalboard](https://github.com/nikethai/focalboard)
 2. Install the dependencies (see above)
 3. Run:
 ```

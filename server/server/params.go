@@ -3,12 +3,12 @@ package server
 import (
 	"fmt"
 
-	"github.com/mattermost/focalboard/server/model"
-	"github.com/mattermost/focalboard/server/services/config"
-	"github.com/mattermost/focalboard/server/services/notify"
-	"github.com/mattermost/focalboard/server/services/permissions"
-	"github.com/mattermost/focalboard/server/services/store"
-	"github.com/mattermost/focalboard/server/ws"
+	"github.com/nikethai/focalboard/server/model"
+	"github.com/nikethai/focalboard/server/services/config"
+	"github.com/nikethai/focalboard/server/services/notify"
+	"github.com/nikethai/focalboard/server/services/permissions"
+	"github.com/nikethai/focalboard/server/services/store"
+	"github.com/nikethai/focalboard/server/ws"
 
 	"github.com/mattermost/mattermost/server/public/shared/mlog"
 )

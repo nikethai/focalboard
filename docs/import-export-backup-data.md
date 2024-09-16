@@ -11,7 +11,7 @@ This node app converts an Asana JSON archive into a ``.boardarchive`` file. The 
 1. Log into your Asana account.
 2. Select the drop-down menu next to the Asana board's name. Then select **Export/Print > JSON**. This will create an archive file.
 3. Save the file locally, e.g. to ``asana.json``.
-4. Open a terminal window on your local machine and clone the focalboard repository to a local directory, e.g. to ``focalboard``: ``git clone https://github.com/mattermost/focalboard focalboard``
+4. Open a terminal window on your local machine and clone the focalboard repository to a local directory, e.g. to ``focalboard``: ``git clone https://github.com/nikethai/focalboard focalboard``
 5. Navigate to ``focalboard/webapp``.
 6. Run ``npm install``.
 7. Change directory to ``focalboard/import/asana``.
@@ -47,7 +47,7 @@ This node app converts a Notion CSV and markdown export into a ``.boardarchive``
 1. From a Notion Board, open the **...** menu at the top right corner of the board.
 2. Select `Export` and pick `Markdown & CSV` as the export format.
 3. Save the generated file locally, and unzip the folder.
-4. Open a terminal window on your local machine and clone the focalboard repository to a local directory, e.g. to ``focalboard``: ``git clone https://github.com/mattermost/focalboard focalboard``
+4. Open a terminal window on your local machine and clone the focalboard repository to a local directory, e.g. to ``focalboard``: ``git clone https://github.com/nikethai/focalboard focalboard``
 5. Navigate to ``focalboard/webapp``.
 6. Run ``npm install``.
 7. Change directory to ``focalboard/import/notion``.
@@ -69,7 +69,7 @@ This node app converts a Jira ``.XML`` export into a ``.boardarchive`` file. The
 1. Open Jira advanced search, and search for all the items to export.
 2. Select **Export > Export XML**.
 3. Save the generated file locally, e.g. to ``jira_export.xml``.
-4. Open a terminal window on your local machine and clone the focalboard repository to a local directory, e.g. to ``focalboard``: ``git clone https://github.com/mattermost/focalboard focalboard``
+4. Open a terminal window on your local machine and clone the focalboard repository to a local directory, e.g. to ``focalboard``: ``git clone https://github.com/nikethai/focalboard focalboard``
 5. Navigate to ``focalboard/webapp``.
 6. Run ``npm install``.
 7. Change directory to ``focalboard/import/jira`.
@@ -87,7 +87,7 @@ This node app converts a Trello ``.json`` archive into a ``.boardarchive`` file.
 1. From the Trello Board Menu, select **...Show Menu**.
 2. Select **More > Print and Export > Export to JSON**.
 3. Save the generated file locally, e.g. to ``trello.json``.
-4. Open a terminal window on your local machine and clone the focalboard repository to a local directory, e.g. to ``focalboard``: ``git clone https://github.com/mattermost/focalboard focalboard``
+4. Open a terminal window on your local machine and clone the focalboard repository to a local directory, e.g. to ``focalboard``: ``git clone https://github.com/nikethai/focalboard focalboard``
 5. Navigate to ``focalboard/webapp``.
 6. Run ``npm install``.
 7. Change directory to ``focalboard/import/trello``.
@@ -107,7 +107,7 @@ This node app converts a Todoist ``.json`` archive into a ``.boardarchive`` file
 3. Uncheck the **Archived** option if checked.
 4. Select **Authorize and Backup**. This will take you to your Todoist account. Follow the instructions on screen.
 5. Note the name and location of the downloaded ``.json`` file.
-6. Open a terminal window on your local machine and clone the focalboard repository to a local directory, e.g. to ``focalboard``: ``git clone https://github.com/mattermost/focalboard focalboard``
+6. Open a terminal window on your local machine and clone the focalboard repository to a local directory, e.g. to ``focalboard``: ``git clone https://github.com/nikethai/focalboard focalboard``
 7. Navigate to ``focalboard/webapp``.
 8. Run ``npm install``.
 9. Change directory to ``focalboard/import/todoist``.

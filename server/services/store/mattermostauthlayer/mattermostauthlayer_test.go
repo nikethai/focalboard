@@ -6,9 +6,9 @@ import (
 
 	"github.com/golang/mock/gomock"
 
-	"github.com/mattermost/focalboard/server/model"
-	mockservicesapi "github.com/mattermost/focalboard/server/model/mocks"
 	"github.com/mattermost/mattermost/server/public/shared/mlog"
+	"github.com/nikethai/focalboard/server/model"
+	mockservicesapi "github.com/nikethai/focalboard/server/model/mocks"
 
 	"github.com/stretchr/testify/require"
 )

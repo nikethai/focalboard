@@ -3,7 +3,7 @@ package app
 import (
 	"testing"
 
-	"github.com/mattermost/focalboard/server/services/config"
+	"github.com/nikethai/focalboard/server/services/config"
 	"github.com/stretchr/testify/require"
 )
 

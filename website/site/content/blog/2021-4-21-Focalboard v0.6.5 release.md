@@ -74,8 +74,8 @@ Here’s now how to start with different editions:
 **Personal Desktop Edition** - A standalone desktop app for your todos and personal projects
 * **Mac App Store**: Download or upgrade from the [Mac App Store](https://apps.apple.com/app/apple-store/id1556908618?pt=2114704&ct=website&mt=8)
 * **Microsoft Store**: Download from the [Microsoft Store](https://www.microsoft.com/store/apps/9NLN2T0SX9VF?cid=website)
-* **Windows Install**: Download `focalboard-win.zip` from the [release](https://github.com/mattermost/focalboard/releases)
-* **Linux Desktop Install**: Download `focalboard-linux.tar.gz` from the [release](https://github.com/mattermost/focalboard/releases)
+* **Windows Install**: Download `focalboard-win.zip` from the [release](https://github.com/nikethai/focalboard/releases)
+* **Linux Desktop Install**: Download `focalboard-linux.tar.gz` from the [release](https://github.com/nikethai/focalboard/releases)
 
 **Personal Server Edition** - A self-hosted server for your team to collaborate
 * **Linux Server Install**: See the [setup](../../download/personal-edition/ubuntu/) or [upgrade guide](../../download/personal-edition/ubuntu-upgrade/).

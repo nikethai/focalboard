@@ -10,9 +10,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/mattermost/focalboard/server/model"
-	"github.com/mattermost/focalboard/server/services/store"
-	"github.com/mattermost/focalboard/server/utils"
+	"github.com/nikethai/focalboard/server/model"
+	"github.com/nikethai/focalboard/server/services/store"
+	"github.com/nikethai/focalboard/server/utils"
 )
 
 //nolint:dupl

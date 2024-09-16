@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/mattermost/focalboard/server/assets"
-	"github.com/mattermost/focalboard/server/model"
+	"github.com/nikethai/focalboard/server/assets"
+	"github.com/nikethai/focalboard/server/model"
 
 	"github.com/mattermost/mattermost/server/public/shared/mlog"
 )

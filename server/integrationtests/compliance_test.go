@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/mattermost/focalboard/server/model"
-	"github.com/mattermost/focalboard/server/utils"
+	"github.com/nikethai/focalboard/server/model"
+	"github.com/nikethai/focalboard/server/utils"
 	"github.com/stretchr/testify/require"
 )
 

@@ -3,7 +3,7 @@ package model
 import (
 	"fmt"
 
-	"github.com/mattermost/focalboard/server/utils"
+	"github.com/nikethai/focalboard/server/utils"
 
 	"github.com/mattermost/mattermost/server/public/shared/mlog"
 )

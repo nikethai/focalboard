@@ -189,7 +189,7 @@ h={};g()}};typeof define==="function"&&define.amd&&define("google-code-prettify"
   <style type="text/css">
     @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 
-    
+
 /*!
  * Bootstrap v2.3.2
  *
@@ -1170,7 +1170,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -1180,7 +1180,7 @@ public class DefaultApiExample {
         // Create an instance of the API class
         DefaultApi apiInstance = new DefaultApi();
         String boardID = boardID_example; // String | Board ID
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             Object result = apiInstance.addMember(boardID, body);
@@ -1201,7 +1201,7 @@ public class DefaultApiExample {
     public static void main(String[] args) {
         DefaultApi apiInstance = new DefaultApi();
         String boardID = boardID_example; // String | Board ID
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             Object result = apiInstance.addMember(boardID, body);
@@ -1229,7 +1229,7 @@ public class DefaultApiExample {
 // Create an instance of the API class
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
 String *boardID = boardID_example; // Board ID (default to null)
-Object *body = Object; // 
+Object *body = Object; //
 
 [apiInstance addMemberWith:boardID
     body:body
@@ -1257,7 +1257,7 @@ BearerAuth.apiKey = "YOUR API KEY";
 // Create an instance of the API class
 var api = new FocalboardServer.DefaultApi()
 var boardID = boardID_example; // {String} Board ID
-var body = Object; // {Object} 
+var body = Object; // {Object}
 
 var callback = function(error, data, response) {
   if (error) {
@@ -1294,7 +1294,7 @@ namespace Example
             // Create an instance of the API class
             var apiInstance = new DefaultApi();
             var boardID = boardID_example;  // String | Board ID (default to null)
-            var body = Object;  // Object | 
+            var body = Object;  // Object |
 
             try {
                 Object result = apiInstance.addMember(boardID, body);
@@ -1320,7 +1320,7 @@ OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('Authori
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\DefaultApi();
 $boardID = boardID_example; // String | Board ID
-$body = Object; // Object | 
+$body = Object; // Object |
 
 try {
     $result = $api_instance->addMember($boardID, $body);
@@ -1344,7 +1344,7 @@ $WWW::OPenAPIClient::Configuration::api_key->{'Authorization'} = 'YOUR_API_KEY';
 # Create an instance of the API class
 my $api_instance = WWW::OPenAPIClient::DefaultApi->new();
 my $boardID = boardID_example; # String | Board ID
-my $body = WWW::OPenAPIClient::Object::Object->new(); # Object | 
+my $body = WWW::OPenAPIClient::Object::Object->new(); # Object |
 
 eval {
     my $result = $api_instance->addMember(boardID => $boardID, body => $body);
@@ -1370,7 +1370,7 @@ openapi_client.configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Create an instance of the API class
 api_instance = openapi_client.DefaultApi()
 boardID = boardID_example # String | Board ID (default to null)
-body = Object # Object | 
+body = Object # Object |
 
 try:
     api_response = api_instance.add_member(boardID, body)
@@ -1397,7 +1397,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -1515,7 +1515,7 @@ $(document).ready(function() {
                                   <div id="responses-Default-addMember-schema-200" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=BoardMember stores the information of the membership of a user on a board, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=BoardMember stores the information of the membership of a user on a board, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -1599,7 +1599,7 @@ $(document).ready(function() {
                                   <div id="responses-Default-addMember-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -1685,7 +1685,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -1896,7 +1896,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -1989,7 +1989,7 @@ Id of board to export
                                   <div id="responses-Default-archiveExportBoard-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -2075,7 +2075,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -2286,7 +2286,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -2379,7 +2379,7 @@ Id of team
                                   <div id="responses-Default-archiveExportTeam-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -2466,7 +2466,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -2687,7 +2687,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -2813,7 +2813,7 @@ archive file to import
                                   <div id="responses-Default-archiveImport-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -2901,7 +2901,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -2911,7 +2911,7 @@ public class DefaultApiExample {
         // Create an instance of the API class
         DefaultApi apiInstance = new DefaultApi();
         String userID = userID_example; // String | User ID
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             apiInstance.changePassword(userID, body);
@@ -2931,7 +2931,7 @@ public class DefaultApiExample {
     public static void main(String[] args) {
         DefaultApi apiInstance = new DefaultApi();
         String userID = userID_example; // String | User ID
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             apiInstance.changePassword(userID, body);
@@ -2958,7 +2958,7 @@ public class DefaultApiExample {
 // Create an instance of the API class
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
 String *userID = userID_example; // User ID (default to null)
-Object *body = Object; // 
+Object *body = Object; //
 
 [apiInstance changePasswordWith:userID
     body:body
@@ -2983,7 +2983,7 @@ BearerAuth.apiKey = "YOUR API KEY";
 // Create an instance of the API class
 var api = new FocalboardServer.DefaultApi()
 var userID = userID_example; // {String} User ID
-var body = Object; // {Object} 
+var body = Object; // {Object}
 
 var callback = function(error, data, response) {
   if (error) {
@@ -3020,7 +3020,7 @@ namespace Example
             // Create an instance of the API class
             var apiInstance = new DefaultApi();
             var userID = userID_example;  // String | User ID (default to null)
-            var body = Object;  // Object | 
+            var body = Object;  // Object |
 
             try {
                 apiInstance.changePassword(userID, body);
@@ -3045,7 +3045,7 @@ OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('Authori
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\DefaultApi();
 $userID = userID_example; // String | User ID
-$body = Object; // Object | 
+$body = Object; // Object |
 
 try {
     $api_instance->changePassword($userID, $body);
@@ -3068,7 +3068,7 @@ $WWW::OPenAPIClient::Configuration::api_key->{'Authorization'} = 'YOUR_API_KEY';
 # Create an instance of the API class
 my $api_instance = WWW::OPenAPIClient::DefaultApi->new();
 my $userID = userID_example; # String | User ID
-my $body = WWW::OPenAPIClient::Object::Object->new(); # Object | 
+my $body = WWW::OPenAPIClient::Object::Object->new(); # Object |
 
 eval {
     $api_instance->changePassword(userID => $userID, body => $body);
@@ -3093,7 +3093,7 @@ openapi_client.configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Create an instance of the API class
 api_instance = openapi_client.DefaultApi()
 userID = userID_example # String | User ID (default to null)
-body = Object # Object | 
+body = Object # Object |
 
 try:
     api_instance.change_password(userID, body)
@@ -3119,7 +3119,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -3259,7 +3259,7 @@ $(document).ready(function() {
                                   <div id="responses-Default-changePassword-schema-400" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -3321,7 +3321,7 @@ $(document).ready(function() {
                                   <div id="responses-Default-changePassword-schema-500" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -3407,7 +3407,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -3463,7 +3463,7 @@ public class DefaultApiExample {
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
 
 // Fetches the cloud limits of the server.
-[apiInstance cloudLimitsWithCompletionHandler: 
+[apiInstance cloudLimitsWithCompletionHandler:
               ^(Object output, NSError* error) {
     if (output) {
         NSLog(@"%@", output);
@@ -3617,7 +3617,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -3659,7 +3659,7 @@ pub fn main() {
                                     <script>
                                       $(document).ready(function() {
                                         var schemaWrapper = {description=BoardsCloudLimits is the representation of the limits for the
-Boards server, x-go-package=github.com/mattermost/focalboard/server/model};
+Boards server, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -3721,7 +3721,7 @@ Boards server, x-go-package=github.com/mattermost/focalboard/server/model};
                                   <div id="responses-Default-cloudLimits-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -3809,7 +3809,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -3818,7 +3818,7 @@ public class DefaultApiExample {
 
         // Create an instance of the API class
         DefaultApi apiInstance = new DefaultApi();
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             Object result = apiInstance.createBoard(body);
@@ -3838,7 +3838,7 @@ public class DefaultApiExample {
 public class DefaultApiExample {
     public static void main(String[] args) {
         DefaultApi apiInstance = new DefaultApi();
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             Object result = apiInstance.createBoard(body);
@@ -3865,7 +3865,7 @@ public class DefaultApiExample {
 
 // Create an instance of the API class
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
-Object *body = Object; // 
+Object *body = Object; //
 
 [apiInstance createBoardWith:body
               completionHandler: ^(Object output, NSError* error) {
@@ -3891,7 +3891,7 @@ BearerAuth.apiKey = "YOUR API KEY";
 
 // Create an instance of the API class
 var api = new FocalboardServer.DefaultApi()
-var body = Object; // {Object} 
+var body = Object; // {Object}
 
 var callback = function(error, data, response) {
   if (error) {
@@ -3927,7 +3927,7 @@ namespace Example
 
             // Create an instance of the API class
             var apiInstance = new DefaultApi();
-            var body = Object;  // Object | 
+            var body = Object;  // Object |
 
             try {
                 Object result = apiInstance.createBoard(body);
@@ -3952,7 +3952,7 @@ OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('Authori
 
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\DefaultApi();
-$body = Object; // Object | 
+$body = Object; // Object |
 
 try {
     $result = $api_instance->createBoard($body);
@@ -3975,7 +3975,7 @@ $WWW::OPenAPIClient::Configuration::api_key->{'Authorization'} = 'YOUR_API_KEY';
 
 # Create an instance of the API class
 my $api_instance = WWW::OPenAPIClient::DefaultApi->new();
-my $body = WWW::OPenAPIClient::Object::Object->new(); # Object | 
+my $body = WWW::OPenAPIClient::Object::Object->new(); # Object |
 
 eval {
     my $result = $api_instance->createBoard(body => $body);
@@ -4000,7 +4000,7 @@ openapi_client.configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 
 # Create an instance of the API class
 api_instance = openapi_client.DefaultApi()
-body = Object # Object | 
+body = Object # Object |
 
 try:
     api_response = api_instance.create_board(body)
@@ -4026,7 +4026,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -4114,7 +4114,7 @@ $(document).ready(function() {
                                   <div id="responses-Default-createBoard-schema-200" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=Board groups a set of blocks and its layout, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=Board groups a set of blocks and its layout, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -4176,7 +4176,7 @@ $(document).ready(function() {
                                   <div id="responses-Default-createBoard-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -4264,7 +4264,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -4274,7 +4274,7 @@ public class DefaultApiExample {
         // Create an instance of the API class
         DefaultApi apiInstance = new DefaultApi();
         String boardID = boardID_example; // String | Board ID
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
         oas_any_type_not_mapped disableNotify = ; // oas_any_type_not_mapped | Disables notifications (for bulk data inserting)
 
         try {
@@ -4296,7 +4296,7 @@ public class DefaultApiExample {
     public static void main(String[] args) {
         DefaultApi apiInstance = new DefaultApi();
         String boardID = boardID_example; // String | Board ID
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
         oas_any_type_not_mapped disableNotify = ; // oas_any_type_not_mapped | Disables notifications (for bulk data inserting)
 
         try {
@@ -4325,7 +4325,7 @@ public class DefaultApiExample {
 // Create an instance of the API class
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
 String *boardID = boardID_example; // Board ID (default to null)
-Object *body = Object; // 
+Object *body = Object; //
 oas_any_type_not_mapped *disableNotify = ; // Disables notifications (for bulk data inserting) (optional) (default to null)
 
 // Creates a new card for the specified board.
@@ -4356,7 +4356,7 @@ BearerAuth.apiKey = "YOUR API KEY";
 // Create an instance of the API class
 var api = new FocalboardServer.DefaultApi()
 var boardID = boardID_example; // {String} Board ID
-var body = Object; // {Object} 
+var body = Object; // {Object}
 var opts = {
   'disableNotify':  // {oas_any_type_not_mapped} Disables notifications (for bulk data inserting)
 };
@@ -4396,7 +4396,7 @@ namespace Example
             // Create an instance of the API class
             var apiInstance = new DefaultApi();
             var boardID = boardID_example;  // String | Board ID (default to null)
-            var body = Object;  // Object | 
+            var body = Object;  // Object |
             var disableNotify = new oas_any_type_not_mapped(); // oas_any_type_not_mapped | Disables notifications (for bulk data inserting) (optional)  (default to null)
 
             try {
@@ -4424,7 +4424,7 @@ OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('Authori
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\DefaultApi();
 $boardID = boardID_example; // String | Board ID
-$body = Object; // Object | 
+$body = Object; // Object |
 $disableNotify = ; // oas_any_type_not_mapped | Disables notifications (for bulk data inserting)
 
 try {
@@ -4449,7 +4449,7 @@ $WWW::OPenAPIClient::Configuration::api_key->{'Authorization'} = 'YOUR_API_KEY';
 # Create an instance of the API class
 my $api_instance = WWW::OPenAPIClient::DefaultApi->new();
 my $boardID = boardID_example; # String | Board ID
-my $body = WWW::OPenAPIClient::Object::Object->new(); # Object | 
+my $body = WWW::OPenAPIClient::Object::Object->new(); # Object |
 my $disableNotify = ; # oas_any_type_not_mapped | Disables notifications (for bulk data inserting)
 
 eval {
@@ -4476,7 +4476,7 @@ openapi_client.configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Create an instance of the API class
 api_instance = openapi_client.DefaultApi()
 boardID = boardID_example # String | Board ID (default to null)
-body = Object # Object | 
+body = Object # Object |
 disableNotify =  # oas_any_type_not_mapped | Disables notifications (for bulk data inserting) (optional) (default to null)
 
 try:
@@ -4506,7 +4506,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -4651,7 +4651,7 @@ Disables notifications (for bulk data inserting)
                                   <div id="responses-Default-createCard-schema-200" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {title=Card represents a group of content blocks and properties., x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {title=Card represents a group of content blocks and properties., x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -4713,7 +4713,7 @@ Disables notifications (for bulk data inserting)
                                   <div id="responses-Default-createCard-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -4801,7 +4801,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -4811,7 +4811,7 @@ public class DefaultApiExample {
         // Create an instance of the API class
         DefaultApi apiInstance = new DefaultApi();
         String teamID = teamID_example; // String | Team ID
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             Object result = apiInstance.createCategory(teamID, body);
@@ -4832,7 +4832,7 @@ public class DefaultApiExample {
     public static void main(String[] args) {
         DefaultApi apiInstance = new DefaultApi();
         String teamID = teamID_example; // String | Team ID
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             Object result = apiInstance.createCategory(teamID, body);
@@ -4860,7 +4860,7 @@ public class DefaultApiExample {
 // Create an instance of the API class
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
 String *teamID = teamID_example; // Team ID (default to null)
-Object *body = Object; // 
+Object *body = Object; //
 
 [apiInstance createCategoryWith:teamID
     body:body
@@ -4888,7 +4888,7 @@ BearerAuth.apiKey = "YOUR API KEY";
 // Create an instance of the API class
 var api = new FocalboardServer.DefaultApi()
 var teamID = teamID_example; // {String} Team ID
-var body = Object; // {Object} 
+var body = Object; // {Object}
 
 var callback = function(error, data, response) {
   if (error) {
@@ -4925,7 +4925,7 @@ namespace Example
             // Create an instance of the API class
             var apiInstance = new DefaultApi();
             var teamID = teamID_example;  // String | Team ID (default to null)
-            var body = Object;  // Object | 
+            var body = Object;  // Object |
 
             try {
                 Object result = apiInstance.createCategory(teamID, body);
@@ -4951,7 +4951,7 @@ OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('Authori
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\DefaultApi();
 $teamID = teamID_example; // String | Team ID
-$body = Object; // Object | 
+$body = Object; // Object |
 
 try {
     $result = $api_instance->createCategory($teamID, $body);
@@ -4975,7 +4975,7 @@ $WWW::OPenAPIClient::Configuration::api_key->{'Authorization'} = 'YOUR_API_KEY';
 # Create an instance of the API class
 my $api_instance = WWW::OPenAPIClient::DefaultApi->new();
 my $teamID = teamID_example; # String | Team ID
-my $body = WWW::OPenAPIClient::Object::Object->new(); # Object | 
+my $body = WWW::OPenAPIClient::Object::Object->new(); # Object |
 
 eval {
     my $result = $api_instance->createCategory(teamID => $teamID, body => $body);
@@ -5001,7 +5001,7 @@ openapi_client.configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Create an instance of the API class
 api_instance = openapi_client.DefaultApi()
 teamID = teamID_example # String | Team ID (default to null)
-body = Object # Object | 
+body = Object # Object |
 
 try:
     api_response = api_instance.create_category(teamID, body)
@@ -5028,7 +5028,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -5146,7 +5146,7 @@ $(document).ready(function() {
                                   <div id="responses-Default-createCategory-schema-200" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=Category is a board category, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=Category is a board category, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -5208,7 +5208,7 @@ $(document).ready(function() {
                                   <div id="responses-Default-createCategory-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -5296,7 +5296,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -5305,7 +5305,7 @@ public class DefaultApiExample {
 
         // Create an instance of the API class
         DefaultApi apiInstance = new DefaultApi();
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             Object result = apiInstance.createSubscription(body);
@@ -5325,7 +5325,7 @@ public class DefaultApiExample {
 public class DefaultApiExample {
     public static void main(String[] args) {
         DefaultApi apiInstance = new DefaultApi();
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             Object result = apiInstance.createSubscription(body);
@@ -5352,7 +5352,7 @@ public class DefaultApiExample {
 
 // Create an instance of the API class
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
-Object *body = Object; // 
+Object *body = Object; //
 
 // Creates a subscription to a block for a user. The user will receive change notifications for the block.
 [apiInstance createSubscriptionWith:body
@@ -5379,7 +5379,7 @@ BearerAuth.apiKey = "YOUR API KEY";
 
 // Create an instance of the API class
 var api = new FocalboardServer.DefaultApi()
-var body = Object; // {Object} 
+var body = Object; // {Object}
 
 var callback = function(error, data, response) {
   if (error) {
@@ -5415,7 +5415,7 @@ namespace Example
 
             // Create an instance of the API class
             var apiInstance = new DefaultApi();
-            var body = Object;  // Object | 
+            var body = Object;  // Object |
 
             try {
                 // Creates a subscription to a block for a user. The user will receive change notifications for the block.
@@ -5441,7 +5441,7 @@ OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('Authori
 
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\DefaultApi();
-$body = Object; // Object | 
+$body = Object; // Object |
 
 try {
     $result = $api_instance->createSubscription($body);
@@ -5464,7 +5464,7 @@ $WWW::OPenAPIClient::Configuration::api_key->{'Authorization'} = 'YOUR_API_KEY';
 
 # Create an instance of the API class
 my $api_instance = WWW::OPenAPIClient::DefaultApi->new();
-my $body = WWW::OPenAPIClient::Object::Object->new(); # Object | 
+my $body = WWW::OPenAPIClient::Object::Object->new(); # Object |
 
 eval {
     my $result = $api_instance->createSubscription(body => $body);
@@ -5489,7 +5489,7 @@ openapi_client.configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 
 # Create an instance of the API class
 api_instance = openapi_client.DefaultApi()
-body = Object # Object | 
+body = Object # Object |
 
 try:
     # Creates a subscription to a block for a user. The user will receive change notifications for the block.
@@ -5516,7 +5516,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -5604,7 +5604,7 @@ $(document).ready(function() {
                                   <div id="responses-Default-createSubscription-schema-200" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=User is a user, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=User is a user, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -5666,7 +5666,7 @@ $(document).ready(function() {
                                   <div id="responses-Default-createSubscription-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -5752,7 +5752,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -5982,7 +5982,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -6147,7 +6147,7 @@ Disables notifications (for bulk deletion)
                                   <div id="responses-Default-deleteBlock-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -6233,7 +6233,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -6441,7 +6441,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -6556,7 +6556,7 @@ Board ID
                                   <div id="responses-Default-deleteBoard-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -6644,7 +6644,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -6653,7 +6653,7 @@ public class DefaultApiExample {
 
         // Create an instance of the API class
         DefaultApi apiInstance = new DefaultApi();
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             apiInstance.deleteBoardsAndBlocks(body);
@@ -6672,7 +6672,7 @@ public class DefaultApiExample {
 public class DefaultApiExample {
     public static void main(String[] args) {
         DefaultApi apiInstance = new DefaultApi();
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             apiInstance.deleteBoardsAndBlocks(body);
@@ -6698,7 +6698,7 @@ public class DefaultApiExample {
 
 // Create an instance of the API class
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
-Object *body = Object; // 
+Object *body = Object; //
 
 [apiInstance deleteBoardsAndBlocksWith:body
               completionHandler: ^(NSError* error) {
@@ -6721,7 +6721,7 @@ BearerAuth.apiKey = "YOUR API KEY";
 
 // Create an instance of the API class
 var api = new FocalboardServer.DefaultApi()
-var body = Object; // {Object} 
+var body = Object; // {Object}
 
 var callback = function(error, data, response) {
   if (error) {
@@ -6757,7 +6757,7 @@ namespace Example
 
             // Create an instance of the API class
             var apiInstance = new DefaultApi();
-            var body = Object;  // Object | 
+            var body = Object;  // Object |
 
             try {
                 apiInstance.deleteBoardsAndBlocks(body);
@@ -6781,7 +6781,7 @@ OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('Authori
 
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\DefaultApi();
-$body = Object; // Object | 
+$body = Object; // Object |
 
 try {
     $api_instance->deleteBoardsAndBlocks($body);
@@ -6803,7 +6803,7 @@ $WWW::OPenAPIClient::Configuration::api_key->{'Authorization'} = 'YOUR_API_KEY';
 
 # Create an instance of the API class
 my $api_instance = WWW::OPenAPIClient::DefaultApi->new();
-my $body = WWW::OPenAPIClient::Object::Object->new(); # Object | 
+my $body = WWW::OPenAPIClient::Object::Object->new(); # Object |
 
 eval {
     $api_instance->deleteBoardsAndBlocks(body => $body);
@@ -6827,7 +6827,7 @@ openapi_client.configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 
 # Create an instance of the API class
 api_instance = openapi_client.DefaultApi()
-body = Object # Object | 
+body = Object # Object |
 
 try:
     api_instance.delete_boards_and_blocks(body)
@@ -6852,7 +6852,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -6962,7 +6962,7 @@ $(document).ready(function() {
                                   <div id="responses-Default-deleteBoardsAndBlocks-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -7048,7 +7048,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -7266,7 +7266,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -7382,7 +7382,7 @@ Category ID
                                   <div id="responses-Default-deleteCategory-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -7468,7 +7468,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -7686,7 +7686,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -7824,7 +7824,7 @@ User ID
                                   <div id="responses-Default-deleteMember-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -7910,7 +7910,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -8131,7 +8131,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -8247,7 +8247,7 @@ Subscriber ID
                                   <div id="responses-Default-deleteSubscription-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -8333,7 +8333,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -8560,7 +8560,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -8738,7 +8738,7 @@ Block ID
                                   <div id="responses-Default-duplicateBlock-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -8824,7 +8824,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -9041,7 +9041,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -9113,7 +9113,7 @@ Board ID
                                     <script>
                                       $(document).ready(function() {
                                         var schemaWrapper = {description=BoardsAndBlocks is used to operate over boards and blocks at the
-same time, x-go-package=github.com/mattermost/focalboard/server/model};
+same time, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -9197,7 +9197,7 @@ same time, x-go-package=github.com/mattermost/focalboard/server/model};
                                   <div id="responses-Default-duplicateBoard-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -9283,7 +9283,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -9522,7 +9522,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -9724,7 +9724,7 @@ Type of blocks to return, omit to specify all types
                                   <div id="responses-Default-getBlocks-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -9810,7 +9810,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -10027,7 +10027,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -10098,7 +10098,7 @@ Board ID
                                   <div id="responses-Default-getBoard-schema-200" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=Board groups a set of blocks and its layout, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=Board groups a set of blocks and its layout, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -10182,7 +10182,7 @@ Board ID
                                   <div id="responses-Default-getBoard-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -10268,7 +10268,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -10485,7 +10485,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -10556,7 +10556,7 @@ Board ID
                                   <div id="responses-Default-getBoardMetadata-schema-200" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=BoardMetadata contains metadata for a Board, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=BoardMetadata contains metadata for a Board, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -10662,7 +10662,7 @@ Board ID
                                   <div id="responses-Default-getBoardMetadata-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -10748,7 +10748,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -10965,7 +10965,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -11098,7 +11098,7 @@ Team ID
                                   <div id="responses-Default-getBoards-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -11184,7 +11184,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -11404,7 +11404,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -11475,7 +11475,7 @@ Card ID
                                   <div id="responses-Default-getCard-schema-200" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {title=Card represents a group of content blocks and properties., x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {title=Card represents a group of content blocks and properties., x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -11537,7 +11537,7 @@ Card ID
                                   <div id="responses-Default-getCard-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -11623,7 +11623,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -11865,7 +11865,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -12045,7 +12045,7 @@ Number of cards to return per page(default&#x3D;100)
                                   <div id="responses-Default-getCards-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -12131,7 +12131,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -12358,7 +12358,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -12514,7 +12514,7 @@ Channel ID
                                   <div id="responses-Default-getChannel-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -12641,7 +12641,7 @@ public class DefaultApiExample {
 // Create an instance of the API class
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
 
-[apiInstance getClientConfigWithCompletionHandler: 
+[apiInstance getClientConfigWithCompletionHandler:
               ^(Object output, NSError* error) {
     if (output) {
         NSLog(@"%@", output);
@@ -12767,7 +12767,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -12808,7 +12808,7 @@ pub fn main() {
                                   <div id="responses-Default-getClientConfig-schema-200" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ClientConfig is the client configuration, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ClientConfig is the client configuration, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -12870,7 +12870,7 @@ pub fn main() {
                                   <div id="responses-Default-getClientConfig-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -12956,7 +12956,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -13184,7 +13184,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -13345,7 +13345,7 @@ name of the file
                                   <div id="responses-Default-getFile-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -13431,7 +13431,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -13486,7 +13486,7 @@ public class DefaultApiExample {
 // Create an instance of the API class
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
 
-[apiInstance getMeWithCompletionHandler: 
+[apiInstance getMeWithCompletionHandler:
               ^(Object output, NSError* error) {
     if (output) {
         NSLog(@"%@", output);
@@ -13638,7 +13638,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -13679,7 +13679,7 @@ pub fn main() {
                                   <div id="responses-Default-getMe-schema-200" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=User is a user, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=User is a user, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -13741,7 +13741,7 @@ pub fn main() {
                                   <div id="responses-Default-getMe-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -13827,7 +13827,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -14044,7 +14044,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -14177,7 +14177,7 @@ Board ID
                                   <div id="responses-Default-getMembersForBoard-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -14263,7 +14263,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -14318,7 +14318,7 @@ public class DefaultApiExample {
 // Create an instance of the API class
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
 
-[apiInstance getMyMembershipsWithCompletionHandler: 
+[apiInstance getMyMembershipsWithCompletionHandler:
               ^(array[Object] output, NSError* error) {
     if (output) {
         NSLog(@"%@", output);
@@ -14470,7 +14470,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -14573,7 +14573,7 @@ pub fn main() {
                                   <div id="responses-Default-getMyMemberships-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -14659,7 +14659,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -14876,7 +14876,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -14947,7 +14947,7 @@ Board ID
                                   <div id="responses-Default-getSharing-schema-200" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=Sharing is sharing information for a root block, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=Sharing is sharing information for a root block, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -15031,7 +15031,7 @@ Board ID
                                   <div id="responses-Default-getSharing-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -15117,7 +15117,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -15337,7 +15337,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -15470,7 +15470,7 @@ Subscriber ID
                                   <div id="responses-Default-getSubscriptions-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -15556,7 +15556,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -15773,7 +15773,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -15844,7 +15844,7 @@ Team ID
                                   <div id="responses-Default-getTeam-schema-200" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=Team is information global to a team, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=Team is information global to a team, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -15906,7 +15906,7 @@ Team ID
                                   <div id="responses-Default-getTeam-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -15992,7 +15992,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -16231,7 +16231,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -16411,7 +16411,7 @@ exclude bot users
                                   <div id="responses-Default-getTeamUsers-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -16497,7 +16497,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -16552,7 +16552,7 @@ public class DefaultApiExample {
 // Create an instance of the API class
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
 
-[apiInstance getTeamsWithCompletionHandler: 
+[apiInstance getTeamsWithCompletionHandler:
               ^(array[Object] output, NSError* error) {
     if (output) {
         NSLog(@"%@", output);
@@ -16704,7 +16704,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -16807,7 +16807,7 @@ pub fn main() {
                                   <div id="responses-Default-getTeams-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -16893,7 +16893,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -17110,7 +17110,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -17243,7 +17243,7 @@ Team ID
                                   <div id="responses-Default-getTemplates-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -17329,7 +17329,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -17546,7 +17546,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -17617,7 +17617,7 @@ User ID
                                   <div id="responses-Default-getUser-schema-200" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=User is a user, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=User is a user, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -17679,7 +17679,7 @@ User ID
                                   <div id="responses-Default-getUser-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -17765,7 +17765,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -18012,7 +18012,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -18221,7 +18221,7 @@ limit for boards in a page.
                                   <div id="responses-Default-getUserBoardsInsights-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -18307,7 +18307,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -18524,7 +18524,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -18657,7 +18657,7 @@ Team ID
                                   <div id="responses-Default-getUserCategoryBoards-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -18743,7 +18743,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -18798,7 +18798,7 @@ public class DefaultApiExample {
 // Create an instance of the API class
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
 
-[apiInstance getUserConfigWithCompletionHandler: 
+[apiInstance getUserConfigWithCompletionHandler:
               ^(Preferences output, NSError* error) {
     if (output) {
         NSLog(@"%@", output);
@@ -18950,7 +18950,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -19053,7 +19053,7 @@ pub fn main() {
                                   <div id="responses-Default-getUserConfig-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -19139,7 +19139,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -19356,7 +19356,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -19427,7 +19427,7 @@ User ID
                                   <div id="responses-Default-getUsersList-schema-200" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=User is a user, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=User is a user, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -19489,7 +19489,7 @@ User ID
                                   <div id="responses-Default-getUsersList-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -19575,7 +19575,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -19786,7 +19786,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -19879,7 +19879,7 @@ Team ID
                                   <div id="responses-Default-handleNotifyAdminUpgrade-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -19965,7 +19965,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -20021,7 +20021,7 @@ public class DefaultApiExample {
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
 
 // Fetches the statistic  of the server.
-[apiInstance handleStatisticsWithCompletionHandler: 
+[apiInstance handleStatisticsWithCompletionHandler:
               ^(BoardStatistics output, NSError* error) {
     if (output) {
         NSLog(@"%@", output);
@@ -20175,7 +20175,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -20278,7 +20278,7 @@ pub fn main() {
                                   <div id="responses-Default-handleStatistics-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -20364,7 +20364,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -20611,7 +20611,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -20820,7 +20820,7 @@ limit for boards in a page.
                                   <div id="responses-Default-handleTeamBoardsInsights-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -20945,7 +20945,7 @@ public class DefaultApiExample {
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
 
 // Responds with `Hello` if the web service is running.
-[apiInstance helloWithCompletionHandler: 
+[apiInstance helloWithCompletionHandler:
               ^(NSError* error) {
     if (error) {
         NSLog(@"Error: %@", error);
@@ -21066,7 +21066,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -21155,7 +21155,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -21164,7 +21164,7 @@ public class DefaultApiExample {
 
         // Create an instance of the API class
         DefaultApi apiInstance = new DefaultApi();
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             Object result = apiInstance.insertBoardsAndBlocks(body);
@@ -21184,7 +21184,7 @@ public class DefaultApiExample {
 public class DefaultApiExample {
     public static void main(String[] args) {
         DefaultApi apiInstance = new DefaultApi();
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             Object result = apiInstance.insertBoardsAndBlocks(body);
@@ -21211,7 +21211,7 @@ public class DefaultApiExample {
 
 // Create an instance of the API class
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
-Object *body = Object; // 
+Object *body = Object; //
 
 [apiInstance insertBoardsAndBlocksWith:body
               completionHandler: ^(Object output, NSError* error) {
@@ -21237,7 +21237,7 @@ BearerAuth.apiKey = "YOUR API KEY";
 
 // Create an instance of the API class
 var api = new FocalboardServer.DefaultApi()
-var body = Object; // {Object} 
+var body = Object; // {Object}
 
 var callback = function(error, data, response) {
   if (error) {
@@ -21273,7 +21273,7 @@ namespace Example
 
             // Create an instance of the API class
             var apiInstance = new DefaultApi();
-            var body = Object;  // Object | 
+            var body = Object;  // Object |
 
             try {
                 Object result = apiInstance.insertBoardsAndBlocks(body);
@@ -21298,7 +21298,7 @@ OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('Authori
 
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\DefaultApi();
-$body = Object; // Object | 
+$body = Object; // Object |
 
 try {
     $result = $api_instance->insertBoardsAndBlocks($body);
@@ -21321,7 +21321,7 @@ $WWW::OPenAPIClient::Configuration::api_key->{'Authorization'} = 'YOUR_API_KEY';
 
 # Create an instance of the API class
 my $api_instance = WWW::OPenAPIClient::DefaultApi->new();
-my $body = WWW::OPenAPIClient::Object::Object->new(); # Object | 
+my $body = WWW::OPenAPIClient::Object::Object->new(); # Object |
 
 eval {
     my $result = $api_instance->insertBoardsAndBlocks(body => $body);
@@ -21346,7 +21346,7 @@ openapi_client.configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 
 # Create an instance of the API class
 api_instance = openapi_client.DefaultApi()
-body = Object # Object | 
+body = Object # Object |
 
 try:
     api_response = api_instance.insert_boards_and_blocks(body)
@@ -21372,7 +21372,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -21461,7 +21461,7 @@ $(document).ready(function() {
                                     <script>
                                       $(document).ready(function() {
                                         var schemaWrapper = {description=BoardsAndBlocks is used to operate over boards and blocks at the
-same time, x-go-package=github.com/mattermost/focalboard/server/model};
+same time, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -21523,7 +21523,7 @@ same time, x-go-package=github.com/mattermost/focalboard/server/model};
                                   <div id="responses-Default-insertBoardsAndBlocks-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -21609,7 +21609,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -21826,7 +21826,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -21897,7 +21897,7 @@ Board ID
                                   <div id="responses-Default-joinBoard-schema-200" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=BoardMember stores the information of the membership of a user on a board, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=BoardMember stores the information of the membership of a user on a board, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -22003,7 +22003,7 @@ Board ID
                                   <div id="responses-Default-joinBoard-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -22089,7 +22089,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -22297,7 +22297,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -22434,7 +22434,7 @@ Board ID
                                   <div id="responses-Default-leaveBoard-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -22523,7 +22523,7 @@ public class DefaultApiExample {
 
         // Create an instance of the API class
         DefaultApi apiInstance = new DefaultApi();
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             Object result = apiInstance.login(body);
@@ -22543,7 +22543,7 @@ public class DefaultApiExample {
 public class DefaultApiExample {
     public static void main(String[] args) {
         DefaultApi apiInstance = new DefaultApi();
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             Object result = apiInstance.login(body);
@@ -22564,7 +22564,7 @@ public class DefaultApiExample {
 
 // Create an instance of the API class
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
-Object *body = Object; // 
+Object *body = Object; //
 
 [apiInstance loginWith:body
               completionHandler: ^(Object output, NSError* error) {
@@ -22583,7 +22583,7 @@ Object *body = Object; //
 
 // Create an instance of the API class
 var api = new FocalboardServer.DefaultApi()
-var body = Object; // {Object} 
+var body = Object; // {Object}
 
 var callback = function(error, data, response) {
   if (error) {
@@ -22615,7 +22615,7 @@ namespace Example
 
             // Create an instance of the API class
             var apiInstance = new DefaultApi();
-            var body = Object;  // Object | 
+            var body = Object;  // Object |
 
             try {
                 Object result = apiInstance.login(body);
@@ -22635,7 +22635,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\DefaultApi();
-$body = Object; // Object | 
+$body = Object; // Object |
 
 try {
     $result = $api_instance->login($body);
@@ -22653,7 +22653,7 @@ use WWW::OPenAPIClient::DefaultApi;
 
 # Create an instance of the API class
 my $api_instance = WWW::OPenAPIClient::DefaultApi->new();
-my $body = WWW::OPenAPIClient::Object::Object->new(); # Object | 
+my $body = WWW::OPenAPIClient::Object::Object->new(); # Object |
 
 eval {
     my $result = $api_instance->login(body => $body);
@@ -22673,7 +22673,7 @@ from pprint import pprint
 
 # Create an instance of the API class
 api_instance = openapi_client.DefaultApi()
-body = Object # Object | 
+body = Object # Object |
 
 try:
     api_response = api_instance.login(body)
@@ -22699,7 +22699,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -22787,7 +22787,7 @@ $(document).ready(function() {
                                   <div id="responses-Default-login-schema-200" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=LoginResponse is a login response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=LoginResponse is a login response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -22849,7 +22849,7 @@ $(document).ready(function() {
                                   <div id="responses-Default-login-schema-401" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -22911,7 +22911,7 @@ $(document).ready(function() {
                                   <div id="responses-Default-login-schema-500" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -22997,7 +22997,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -23050,7 +23050,7 @@ public class DefaultApiExample {
 // Create an instance of the API class
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
 
-[apiInstance logoutWithCompletionHandler: 
+[apiInstance logoutWithCompletionHandler:
               ^(NSError* error) {
     if (error) {
         NSLog(@"Error: %@", error);
@@ -23195,7 +23195,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -23258,7 +23258,7 @@ pub fn main() {
                                   <div id="responses-Default-logout-schema-500" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -23344,7 +23344,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -23564,7 +23564,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -23697,7 +23697,7 @@ Team ID
                                   <div id="responses-Default-onboard-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -23785,7 +23785,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -23796,7 +23796,7 @@ public class DefaultApiExample {
         DefaultApi apiInstance = new DefaultApi();
         String boardID = boardID_example; // String | Board ID
         String blockID = blockID_example; // String | ID of block to patch
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
         oas_any_type_not_mapped disableNotify = ; // oas_any_type_not_mapped | Disables notifications (for bulk patching)
 
         try {
@@ -23818,7 +23818,7 @@ public class DefaultApiExample {
         DefaultApi apiInstance = new DefaultApi();
         String boardID = boardID_example; // String | Board ID
         String blockID = blockID_example; // String | ID of block to patch
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
         oas_any_type_not_mapped disableNotify = ; // oas_any_type_not_mapped | Disables notifications (for bulk patching)
 
         try {
@@ -23847,7 +23847,7 @@ public class DefaultApiExample {
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
 String *boardID = boardID_example; // Board ID (default to null)
 String *blockID = blockID_example; // ID of block to patch (default to null)
-Object *body = Object; // 
+Object *body = Object; //
 oas_any_type_not_mapped *disableNotify = ; // Disables notifications (for bulk patching) (optional) (default to null)
 
 [apiInstance patchBlockWith:boardID
@@ -23876,7 +23876,7 @@ BearerAuth.apiKey = "YOUR API KEY";
 var api = new FocalboardServer.DefaultApi()
 var boardID = boardID_example; // {String} Board ID
 var blockID = blockID_example; // {String} ID of block to patch
-var body = Object; // {Object} 
+var body = Object; // {Object}
 var opts = {
   'disableNotify':  // {oas_any_type_not_mapped} Disables notifications (for bulk patching)
 };
@@ -23917,7 +23917,7 @@ namespace Example
             var apiInstance = new DefaultApi();
             var boardID = boardID_example;  // String | Board ID (default to null)
             var blockID = blockID_example;  // String | ID of block to patch (default to null)
-            var body = Object;  // Object | 
+            var body = Object;  // Object |
             var disableNotify = new oas_any_type_not_mapped(); // oas_any_type_not_mapped | Disables notifications (for bulk patching) (optional)  (default to null)
 
             try {
@@ -23944,7 +23944,7 @@ OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('Authori
 $api_instance = new OpenAPITools\Client\Api\DefaultApi();
 $boardID = boardID_example; // String | Board ID
 $blockID = blockID_example; // String | ID of block to patch
-$body = Object; // Object | 
+$body = Object; // Object |
 $disableNotify = ; // oas_any_type_not_mapped | Disables notifications (for bulk patching)
 
 try {
@@ -23969,7 +23969,7 @@ $WWW::OPenAPIClient::Configuration::api_key->{'Authorization'} = 'YOUR_API_KEY';
 my $api_instance = WWW::OPenAPIClient::DefaultApi->new();
 my $boardID = boardID_example; # String | Board ID
 my $blockID = blockID_example; # String | ID of block to patch
-my $body = WWW::OPenAPIClient::Object::Object->new(); # Object | 
+my $body = WWW::OPenAPIClient::Object::Object->new(); # Object |
 my $disableNotify = ; # oas_any_type_not_mapped | Disables notifications (for bulk patching)
 
 eval {
@@ -23996,7 +23996,7 @@ openapi_client.configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 api_instance = openapi_client.DefaultApi()
 boardID = boardID_example # String | Board ID (default to null)
 blockID = blockID_example # String | ID of block to patch (default to null)
-body = Object # Object | 
+body = Object # Object |
 disableNotify =  # oas_any_type_not_mapped | Disables notifications (for bulk patching) (optional) (default to null)
 
 try:
@@ -24025,7 +24025,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -24237,7 +24237,7 @@ Disables notifications (for bulk patching)
                                   <div id="responses-Default-patchBlock-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -24325,7 +24325,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -24335,7 +24335,7 @@ public class DefaultApiExample {
         // Create an instance of the API class
         DefaultApi apiInstance = new DefaultApi();
         String boardID = boardID_example; // String | Workspace ID
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
         oas_any_type_not_mapped disableNotify = ; // oas_any_type_not_mapped | Disables notifications (for bulk patching)
 
         try {
@@ -24356,7 +24356,7 @@ public class DefaultApiExample {
     public static void main(String[] args) {
         DefaultApi apiInstance = new DefaultApi();
         String boardID = boardID_example; // String | Workspace ID
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
         oas_any_type_not_mapped disableNotify = ; // oas_any_type_not_mapped | Disables notifications (for bulk patching)
 
         try {
@@ -24384,7 +24384,7 @@ public class DefaultApiExample {
 // Create an instance of the API class
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
 String *boardID = boardID_example; // Workspace ID (default to null)
-Object *body = Object; // 
+Object *body = Object; //
 oas_any_type_not_mapped *disableNotify = ; // Disables notifications (for bulk patching) (optional) (default to null)
 
 [apiInstance patchBlocksWith:boardID
@@ -24411,7 +24411,7 @@ BearerAuth.apiKey = "YOUR API KEY";
 // Create an instance of the API class
 var api = new FocalboardServer.DefaultApi()
 var boardID = boardID_example; // {String} Workspace ID
-var body = Object; // {Object} 
+var body = Object; // {Object}
 var opts = {
   'disableNotify':  // {oas_any_type_not_mapped} Disables notifications (for bulk patching)
 };
@@ -24451,7 +24451,7 @@ namespace Example
             // Create an instance of the API class
             var apiInstance = new DefaultApi();
             var boardID = boardID_example;  // String | Workspace ID (default to null)
-            var body = Object;  // Object | 
+            var body = Object;  // Object |
             var disableNotify = new oas_any_type_not_mapped(); // oas_any_type_not_mapped | Disables notifications (for bulk patching) (optional)  (default to null)
 
             try {
@@ -24477,7 +24477,7 @@ OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('Authori
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\DefaultApi();
 $boardID = boardID_example; // String | Workspace ID
-$body = Object; // Object | 
+$body = Object; // Object |
 $disableNotify = ; // oas_any_type_not_mapped | Disables notifications (for bulk patching)
 
 try {
@@ -24501,7 +24501,7 @@ $WWW::OPenAPIClient::Configuration::api_key->{'Authorization'} = 'YOUR_API_KEY';
 # Create an instance of the API class
 my $api_instance = WWW::OPenAPIClient::DefaultApi->new();
 my $boardID = boardID_example; # String | Workspace ID
-my $body = WWW::OPenAPIClient::Object::Object->new(); # Object | 
+my $body = WWW::OPenAPIClient::Object::Object->new(); # Object |
 my $disableNotify = ; # oas_any_type_not_mapped | Disables notifications (for bulk patching)
 
 eval {
@@ -24527,7 +24527,7 @@ openapi_client.configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Create an instance of the API class
 api_instance = openapi_client.DefaultApi()
 boardID = boardID_example # String | Workspace ID (default to null)
-body = Object # Object | 
+body = Object # Object |
 disableNotify =  # oas_any_type_not_mapped | Disables notifications (for bulk patching) (optional) (default to null)
 
 try:
@@ -24555,7 +24555,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -24722,7 +24722,7 @@ Disables notifications (for bulk patching)
                                   <div id="responses-Default-patchBlocks-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -24810,7 +24810,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -24820,7 +24820,7 @@ public class DefaultApiExample {
         // Create an instance of the API class
         DefaultApi apiInstance = new DefaultApi();
         String boardID = boardID_example; // String | Board ID
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             Object result = apiInstance.patchBoard(boardID, body);
@@ -24841,7 +24841,7 @@ public class DefaultApiExample {
     public static void main(String[] args) {
         DefaultApi apiInstance = new DefaultApi();
         String boardID = boardID_example; // String | Board ID
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             Object result = apiInstance.patchBoard(boardID, body);
@@ -24869,7 +24869,7 @@ public class DefaultApiExample {
 // Create an instance of the API class
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
 String *boardID = boardID_example; // Board ID (default to null)
-Object *body = Object; // 
+Object *body = Object; //
 
 [apiInstance patchBoardWith:boardID
     body:body
@@ -24897,7 +24897,7 @@ BearerAuth.apiKey = "YOUR API KEY";
 // Create an instance of the API class
 var api = new FocalboardServer.DefaultApi()
 var boardID = boardID_example; // {String} Board ID
-var body = Object; // {Object} 
+var body = Object; // {Object}
 
 var callback = function(error, data, response) {
   if (error) {
@@ -24934,7 +24934,7 @@ namespace Example
             // Create an instance of the API class
             var apiInstance = new DefaultApi();
             var boardID = boardID_example;  // String | Board ID (default to null)
-            var body = Object;  // Object | 
+            var body = Object;  // Object |
 
             try {
                 Object result = apiInstance.patchBoard(boardID, body);
@@ -24960,7 +24960,7 @@ OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('Authori
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\DefaultApi();
 $boardID = boardID_example; // String | Board ID
-$body = Object; // Object | 
+$body = Object; // Object |
 
 try {
     $result = $api_instance->patchBoard($boardID, $body);
@@ -24984,7 +24984,7 @@ $WWW::OPenAPIClient::Configuration::api_key->{'Authorization'} = 'YOUR_API_KEY';
 # Create an instance of the API class
 my $api_instance = WWW::OPenAPIClient::DefaultApi->new();
 my $boardID = boardID_example; # String | Board ID
-my $body = WWW::OPenAPIClient::Object::Object->new(); # Object | 
+my $body = WWW::OPenAPIClient::Object::Object->new(); # Object |
 
 eval {
     my $result = $api_instance->patchBoard(boardID => $boardID, body => $body);
@@ -25010,7 +25010,7 @@ openapi_client.configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Create an instance of the API class
 api_instance = openapi_client.DefaultApi()
 boardID = boardID_example # String | Board ID (default to null)
-body = Object # Object | 
+body = Object # Object |
 
 try:
     api_response = api_instance.patch_board(boardID, body)
@@ -25037,7 +25037,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -25155,7 +25155,7 @@ $(document).ready(function() {
                                   <div id="responses-Default-patchBoard-schema-200" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=Board groups a set of blocks and its layout, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=Board groups a set of blocks and its layout, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -25239,7 +25239,7 @@ $(document).ready(function() {
                                   <div id="responses-Default-patchBoard-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -25327,7 +25327,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -25336,7 +25336,7 @@ public class DefaultApiExample {
 
         // Create an instance of the API class
         DefaultApi apiInstance = new DefaultApi();
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             Object result = apiInstance.patchBoardsAndBlocks(body);
@@ -25356,7 +25356,7 @@ public class DefaultApiExample {
 public class DefaultApiExample {
     public static void main(String[] args) {
         DefaultApi apiInstance = new DefaultApi();
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             Object result = apiInstance.patchBoardsAndBlocks(body);
@@ -25383,7 +25383,7 @@ public class DefaultApiExample {
 
 // Create an instance of the API class
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
-Object *body = Object; // 
+Object *body = Object; //
 
 [apiInstance patchBoardsAndBlocksWith:body
               completionHandler: ^(Object output, NSError* error) {
@@ -25409,7 +25409,7 @@ BearerAuth.apiKey = "YOUR API KEY";
 
 // Create an instance of the API class
 var api = new FocalboardServer.DefaultApi()
-var body = Object; // {Object} 
+var body = Object; // {Object}
 
 var callback = function(error, data, response) {
   if (error) {
@@ -25445,7 +25445,7 @@ namespace Example
 
             // Create an instance of the API class
             var apiInstance = new DefaultApi();
-            var body = Object;  // Object | 
+            var body = Object;  // Object |
 
             try {
                 Object result = apiInstance.patchBoardsAndBlocks(body);
@@ -25470,7 +25470,7 @@ OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('Authori
 
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\DefaultApi();
-$body = Object; // Object | 
+$body = Object; // Object |
 
 try {
     $result = $api_instance->patchBoardsAndBlocks($body);
@@ -25493,7 +25493,7 @@ $WWW::OPenAPIClient::Configuration::api_key->{'Authorization'} = 'YOUR_API_KEY';
 
 # Create an instance of the API class
 my $api_instance = WWW::OPenAPIClient::DefaultApi->new();
-my $body = WWW::OPenAPIClient::Object::Object->new(); # Object | 
+my $body = WWW::OPenAPIClient::Object::Object->new(); # Object |
 
 eval {
     my $result = $api_instance->patchBoardsAndBlocks(body => $body);
@@ -25518,7 +25518,7 @@ openapi_client.configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 
 # Create an instance of the API class
 api_instance = openapi_client.DefaultApi()
-body = Object # Object | 
+body = Object # Object |
 
 try:
     api_response = api_instance.patch_boards_and_blocks(body)
@@ -25544,7 +25544,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -25633,7 +25633,7 @@ $(document).ready(function() {
                                     <script>
                                       $(document).ready(function() {
                                         var schemaWrapper = {description=BoardsAndBlocks is used to operate over boards and blocks at the
-same time, x-go-package=github.com/mattermost/focalboard/server/model};
+same time, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -25695,7 +25695,7 @@ same time, x-go-package=github.com/mattermost/focalboard/server/model};
                                   <div id="responses-Default-patchBoardsAndBlocks-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -25783,7 +25783,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -25793,7 +25793,7 @@ public class DefaultApiExample {
         // Create an instance of the API class
         DefaultApi apiInstance = new DefaultApi();
         String cardID = cardID_example; // String | Card ID
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
         oas_any_type_not_mapped disableNotify = ; // oas_any_type_not_mapped | Disables notifications (for bulk data patching)
 
         try {
@@ -25815,7 +25815,7 @@ public class DefaultApiExample {
     public static void main(String[] args) {
         DefaultApi apiInstance = new DefaultApi();
         String cardID = cardID_example; // String | Card ID
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
         oas_any_type_not_mapped disableNotify = ; // oas_any_type_not_mapped | Disables notifications (for bulk data patching)
 
         try {
@@ -25844,7 +25844,7 @@ public class DefaultApiExample {
 // Create an instance of the API class
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
 String *cardID = cardID_example; // Card ID (default to null)
-Object *body = Object; // 
+Object *body = Object; //
 oas_any_type_not_mapped *disableNotify = ; // Disables notifications (for bulk data patching) (optional) (default to null)
 
 // Patches the specified card.
@@ -25875,7 +25875,7 @@ BearerAuth.apiKey = "YOUR API KEY";
 // Create an instance of the API class
 var api = new FocalboardServer.DefaultApi()
 var cardID = cardID_example; // {String} Card ID
-var body = Object; // {Object} 
+var body = Object; // {Object}
 var opts = {
   'disableNotify':  // {oas_any_type_not_mapped} Disables notifications (for bulk data patching)
 };
@@ -25915,7 +25915,7 @@ namespace Example
             // Create an instance of the API class
             var apiInstance = new DefaultApi();
             var cardID = cardID_example;  // String | Card ID (default to null)
-            var body = Object;  // Object | 
+            var body = Object;  // Object |
             var disableNotify = new oas_any_type_not_mapped(); // oas_any_type_not_mapped | Disables notifications (for bulk data patching) (optional)  (default to null)
 
             try {
@@ -25943,7 +25943,7 @@ OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('Authori
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\DefaultApi();
 $cardID = cardID_example; // String | Card ID
-$body = Object; // Object | 
+$body = Object; // Object |
 $disableNotify = ; // oas_any_type_not_mapped | Disables notifications (for bulk data patching)
 
 try {
@@ -25968,7 +25968,7 @@ $WWW::OPenAPIClient::Configuration::api_key->{'Authorization'} = 'YOUR_API_KEY';
 # Create an instance of the API class
 my $api_instance = WWW::OPenAPIClient::DefaultApi->new();
 my $cardID = cardID_example; # String | Card ID
-my $body = WWW::OPenAPIClient::Object::Object->new(); # Object | 
+my $body = WWW::OPenAPIClient::Object::Object->new(); # Object |
 my $disableNotify = ; # oas_any_type_not_mapped | Disables notifications (for bulk data patching)
 
 eval {
@@ -25995,7 +25995,7 @@ openapi_client.configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Create an instance of the API class
 api_instance = openapi_client.DefaultApi()
 cardID = cardID_example # String | Card ID (default to null)
-body = Object # Object | 
+body = Object # Object |
 disableNotify =  # oas_any_type_not_mapped | Disables notifications (for bulk data patching) (optional) (default to null)
 
 try:
@@ -26025,7 +26025,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -26170,7 +26170,7 @@ Disables notifications (for bulk data patching)
                                   <div id="responses-Default-patchCard-schema-200" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {title=Card represents a group of content blocks and properties., x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {title=Card represents a group of content blocks and properties., x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -26232,7 +26232,7 @@ Disables notifications (for bulk data patching)
                                   <div id="responses-Default-patchCard-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -26357,7 +26357,7 @@ public class DefaultApiExample {
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
 
 // Responds with server metadata if the web service is running.
-[apiInstance pingWithCompletionHandler: 
+[apiInstance pingWithCompletionHandler:
               ^(NSError* error) {
     if (error) {
         NSLog(@"Error: %@", error);
@@ -26478,7 +26478,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -26567,7 +26567,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -26577,7 +26577,7 @@ public class DefaultApiExample {
         // Create an instance of the API class
         DefaultApi apiInstance = new DefaultApi();
         String boardID = boardID_example; // String | Board ID
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             apiInstance.postSharing(boardID, body);
@@ -26597,7 +26597,7 @@ public class DefaultApiExample {
     public static void main(String[] args) {
         DefaultApi apiInstance = new DefaultApi();
         String boardID = boardID_example; // String | Board ID
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             apiInstance.postSharing(boardID, body);
@@ -26624,7 +26624,7 @@ public class DefaultApiExample {
 // Create an instance of the API class
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
 String *boardID = boardID_example; // Board ID (default to null)
-Object *body = Object; // 
+Object *body = Object; //
 
 [apiInstance postSharingWith:boardID
     body:body
@@ -26649,7 +26649,7 @@ BearerAuth.apiKey = "YOUR API KEY";
 // Create an instance of the API class
 var api = new FocalboardServer.DefaultApi()
 var boardID = boardID_example; // {String} Board ID
-var body = Object; // {Object} 
+var body = Object; // {Object}
 
 var callback = function(error, data, response) {
   if (error) {
@@ -26686,7 +26686,7 @@ namespace Example
             // Create an instance of the API class
             var apiInstance = new DefaultApi();
             var boardID = boardID_example;  // String | Board ID (default to null)
-            var body = Object;  // Object | 
+            var body = Object;  // Object |
 
             try {
                 apiInstance.postSharing(boardID, body);
@@ -26711,7 +26711,7 @@ OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('Authori
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\DefaultApi();
 $boardID = boardID_example; // String | Board ID
-$body = Object; // Object | 
+$body = Object; // Object |
 
 try {
     $api_instance->postSharing($boardID, $body);
@@ -26734,7 +26734,7 @@ $WWW::OPenAPIClient::Configuration::api_key->{'Authorization'} = 'YOUR_API_KEY';
 # Create an instance of the API class
 my $api_instance = WWW::OPenAPIClient::DefaultApi->new();
 my $boardID = boardID_example; # String | Board ID
-my $body = WWW::OPenAPIClient::Object::Object->new(); # Object | 
+my $body = WWW::OPenAPIClient::Object::Object->new(); # Object |
 
 eval {
     $api_instance->postSharing(boardID => $boardID, body => $body);
@@ -26759,7 +26759,7 @@ openapi_client.configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Create an instance of the API class
 api_instance = openapi_client.DefaultApi()
 boardID = boardID_example # String | Board ID (default to null)
-body = Object # Object | 
+body = Object # Object |
 
 try:
     api_instance.post_sharing(boardID, body)
@@ -26785,7 +26785,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -26925,7 +26925,7 @@ $(document).ready(function() {
                                   <div id="responses-Default-postSharing-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -27011,7 +27011,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -27219,7 +27219,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -27312,7 +27312,7 @@ Team ID
                                   <div id="responses-Default-regenerateSignupToken-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -27401,7 +27401,7 @@ public class DefaultApiExample {
 
         // Create an instance of the API class
         DefaultApi apiInstance = new DefaultApi();
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             apiInstance.register(body);
@@ -27420,7 +27420,7 @@ public class DefaultApiExample {
 public class DefaultApiExample {
     public static void main(String[] args) {
         DefaultApi apiInstance = new DefaultApi();
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             apiInstance.register(body);
@@ -27440,7 +27440,7 @@ public class DefaultApiExample {
 
 // Create an instance of the API class
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
-Object *body = Object; // 
+Object *body = Object; //
 
 [apiInstance registerWith:body
               completionHandler: ^(NSError* error) {
@@ -27456,7 +27456,7 @@ Object *body = Object; //
 
 // Create an instance of the API class
 var api = new FocalboardServer.DefaultApi()
-var body = Object; // {Object} 
+var body = Object; // {Object}
 
 var callback = function(error, data, response) {
   if (error) {
@@ -27488,7 +27488,7 @@ namespace Example
 
             // Create an instance of the API class
             var apiInstance = new DefaultApi();
-            var body = Object;  // Object | 
+            var body = Object;  // Object |
 
             try {
                 apiInstance.register(body);
@@ -27507,7 +27507,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\DefaultApi();
-$body = Object; // Object | 
+$body = Object; // Object |
 
 try {
     $api_instance->register($body);
@@ -27524,7 +27524,7 @@ use WWW::OPenAPIClient::DefaultApi;
 
 # Create an instance of the API class
 my $api_instance = WWW::OPenAPIClient::DefaultApi->new();
-my $body = WWW::OPenAPIClient::Object::Object->new(); # Object | 
+my $body = WWW::OPenAPIClient::Object::Object->new(); # Object |
 
 eval {
     $api_instance->register(body => $body);
@@ -27543,7 +27543,7 @@ from pprint import pprint
 
 # Create an instance of the API class
 api_instance = openapi_client.DefaultApi()
-body = Object # Object | 
+body = Object # Object |
 
 try:
     api_instance.register(body)
@@ -27568,7 +27568,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -27700,7 +27700,7 @@ $(document).ready(function() {
                                   <div id="responses-Default-register-schema-500" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -27786,7 +27786,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -28003,7 +28003,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -28136,7 +28136,7 @@ The search term. Must have at least one character
                                   <div id="responses-Default-searchAllBoards-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -28222,7 +28222,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -28449,7 +28449,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -28612,7 +28612,7 @@ The search term. Must have at least one character
                                   <div id="responses-Default-searchBoards-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -28699,7 +28699,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -28926,7 +28926,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -29089,7 +29089,7 @@ The search term. Must have at least one character
                                   <div id="responses-Default-searchLinkableBoards-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -29175,7 +29175,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -29404,7 +29404,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -29564,7 +29564,7 @@ string to filter channels list
                                   <div id="responses-Default-searchMyChannels-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -29650,7 +29650,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -29877,7 +29877,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -29971,7 +29971,7 @@ ID of block to undelete
                                   <div id="responses-Default-undeleteBlock-schema-200" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=BlockPatch is a patch for modify blocks, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=BlockPatch is a patch for modify blocks, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -30055,7 +30055,7 @@ ID of block to undelete
                                   <div id="responses-Default-undeleteBlock-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -30141,7 +30141,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -30349,7 +30349,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -30442,7 +30442,7 @@ ID of board to undelete
                                   <div id="responses-Default-undeleteBoard-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -30532,7 +30532,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -30542,7 +30542,7 @@ public class DefaultApiExample {
         // Create an instance of the API class
         DefaultApi apiInstance = new DefaultApi();
         String boardID = boardID_example; // String | Board ID
-        array[Object] body = ; // array[Object] | 
+        array[Object] body = ; // array[Object] |
         oas_any_type_not_mapped disableNotify = ; // oas_any_type_not_mapped | Disables notifications (for bulk inserting)
 
         try {
@@ -30564,7 +30564,7 @@ public class DefaultApiExample {
     public static void main(String[] args) {
         DefaultApi apiInstance = new DefaultApi();
         String boardID = boardID_example; // String | Board ID
-        array[Object] body = ; // array[Object] | 
+        array[Object] body = ; // array[Object] |
         oas_any_type_not_mapped disableNotify = ; // oas_any_type_not_mapped | Disables notifications (for bulk inserting)
 
         try {
@@ -30593,7 +30593,7 @@ public class DefaultApiExample {
 // Create an instance of the API class
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
 String *boardID = boardID_example; // Board ID (default to null)
-array[Object] *body = ; // 
+array[Object] *body = ; //
 oas_any_type_not_mapped *disableNotify = ; // Disables notifications (for bulk inserting) (optional) (default to null)
 
 [apiInstance updateBlocksWith:boardID
@@ -30623,7 +30623,7 @@ BearerAuth.apiKey = "YOUR API KEY";
 // Create an instance of the API class
 var api = new FocalboardServer.DefaultApi()
 var boardID = boardID_example; // {String} Board ID
-var body = ; // {array[Object]} 
+var body = ; // {array[Object]}
 var opts = {
   'disableNotify':  // {oas_any_type_not_mapped} Disables notifications (for bulk inserting)
 };
@@ -30663,7 +30663,7 @@ namespace Example
             // Create an instance of the API class
             var apiInstance = new DefaultApi();
             var boardID = boardID_example;  // String | Board ID (default to null)
-            var body = new array[Object](); // array[Object] | 
+            var body = new array[Object](); // array[Object] |
             var disableNotify = new oas_any_type_not_mapped(); // oas_any_type_not_mapped | Disables notifications (for bulk inserting) (optional)  (default to null)
 
             try {
@@ -30690,7 +30690,7 @@ OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('Authori
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\DefaultApi();
 $boardID = boardID_example; // String | Board ID
-$body = ; // array[Object] | 
+$body = ; // array[Object] |
 $disableNotify = ; // oas_any_type_not_mapped | Disables notifications (for bulk inserting)
 
 try {
@@ -30715,7 +30715,7 @@ $WWW::OPenAPIClient::Configuration::api_key->{'Authorization'} = 'YOUR_API_KEY';
 # Create an instance of the API class
 my $api_instance = WWW::OPenAPIClient::DefaultApi->new();
 my $boardID = boardID_example; # String | Board ID
-my $body = [WWW::OPenAPIClient::Object::array[Object]->new()]; # array[Object] | 
+my $body = [WWW::OPenAPIClient::Object::array[Object]->new()]; # array[Object] |
 my $disableNotify = ; # oas_any_type_not_mapped | Disables notifications (for bulk inserting)
 
 eval {
@@ -30742,7 +30742,7 @@ openapi_client.configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Create an instance of the API class
 api_instance = openapi_client.DefaultApi()
 boardID = boardID_example # String | Board ID (default to null)
-body =  # array[Object] | 
+body =  # array[Object] |
 disableNotify =  # oas_any_type_not_mapped | Disables notifications (for bulk inserting) (optional) (default to null)
 
 try:
@@ -30771,7 +30771,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -30981,7 +30981,7 @@ Disables notifications (for bulk inserting)
                                   <div id="responses-Default-updateBlocks-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -31069,7 +31069,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -31080,7 +31080,7 @@ public class DefaultApiExample {
         DefaultApi apiInstance = new DefaultApi();
         String teamID = teamID_example; // String | Team ID
         String categoryID = categoryID_example; // String | Category ID
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             Object result = apiInstance.updateCategory(teamID, categoryID, body);
@@ -31102,7 +31102,7 @@ public class DefaultApiExample {
         DefaultApi apiInstance = new DefaultApi();
         String teamID = teamID_example; // String | Team ID
         String categoryID = categoryID_example; // String | Category ID
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             Object result = apiInstance.updateCategory(teamID, categoryID, body);
@@ -31131,7 +31131,7 @@ public class DefaultApiExample {
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
 String *teamID = teamID_example; // Team ID (default to null)
 String *categoryID = categoryID_example; // Category ID (default to null)
-Object *body = Object; // 
+Object *body = Object; //
 
 [apiInstance updateCategoryWith:teamID
     categoryID:categoryID
@@ -31161,7 +31161,7 @@ BearerAuth.apiKey = "YOUR API KEY";
 var api = new FocalboardServer.DefaultApi()
 var teamID = teamID_example; // {String} Team ID
 var categoryID = categoryID_example; // {String} Category ID
-var body = Object; // {Object} 
+var body = Object; // {Object}
 
 var callback = function(error, data, response) {
   if (error) {
@@ -31199,7 +31199,7 @@ namespace Example
             var apiInstance = new DefaultApi();
             var teamID = teamID_example;  // String | Team ID (default to null)
             var categoryID = categoryID_example;  // String | Category ID (default to null)
-            var body = Object;  // Object | 
+            var body = Object;  // Object |
 
             try {
                 Object result = apiInstance.updateCategory(teamID, categoryID, body);
@@ -31226,7 +31226,7 @@ OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('Authori
 $api_instance = new OpenAPITools\Client\Api\DefaultApi();
 $teamID = teamID_example; // String | Team ID
 $categoryID = categoryID_example; // String | Category ID
-$body = Object; // Object | 
+$body = Object; // Object |
 
 try {
     $result = $api_instance->updateCategory($teamID, $categoryID, $body);
@@ -31251,7 +31251,7 @@ $WWW::OPenAPIClient::Configuration::api_key->{'Authorization'} = 'YOUR_API_KEY';
 my $api_instance = WWW::OPenAPIClient::DefaultApi->new();
 my $teamID = teamID_example; # String | Team ID
 my $categoryID = categoryID_example; # String | Category ID
-my $body = WWW::OPenAPIClient::Object::Object->new(); # Object | 
+my $body = WWW::OPenAPIClient::Object::Object->new(); # Object |
 
 eval {
     my $result = $api_instance->updateCategory(teamID => $teamID, categoryID => $categoryID, body => $body);
@@ -31278,7 +31278,7 @@ openapi_client.configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 api_instance = openapi_client.DefaultApi()
 teamID = teamID_example # String | Team ID (default to null)
 categoryID = categoryID_example # String | Category ID (default to null)
-body = Object # Object | 
+body = Object # Object |
 
 try:
     api_response = api_instance.update_category(teamID, categoryID, body)
@@ -31306,7 +31306,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -31447,7 +31447,7 @@ $(document).ready(function() {
                                   <div id="responses-Default-updateCategory-schema-200" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=Category is a board category, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=Category is a board category, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -31509,7 +31509,7 @@ $(document).ready(function() {
                                   <div id="responses-Default-updateCategory-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -31595,7 +31595,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -31823,7 +31823,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -31962,7 +31962,7 @@ Board ID
                                   <div id="responses-Default-updateCategoryBoard-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -32050,7 +32050,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -32061,7 +32061,7 @@ public class DefaultApiExample {
         DefaultApi apiInstance = new DefaultApi();
         String boardID = boardID_example; // String | Board ID
         String userID = userID_example; // String | User ID
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             Object result = apiInstance.updateMember(boardID, userID, body);
@@ -32083,7 +32083,7 @@ public class DefaultApiExample {
         DefaultApi apiInstance = new DefaultApi();
         String boardID = boardID_example; // String | Board ID
         String userID = userID_example; // String | User ID
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             Object result = apiInstance.updateMember(boardID, userID, body);
@@ -32112,7 +32112,7 @@ public class DefaultApiExample {
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
 String *boardID = boardID_example; // Board ID (default to null)
 String *userID = userID_example; // User ID (default to null)
-Object *body = Object; // 
+Object *body = Object; //
 
 [apiInstance updateMemberWith:boardID
     userID:userID
@@ -32142,7 +32142,7 @@ BearerAuth.apiKey = "YOUR API KEY";
 var api = new FocalboardServer.DefaultApi()
 var boardID = boardID_example; // {String} Board ID
 var userID = userID_example; // {String} User ID
-var body = Object; // {Object} 
+var body = Object; // {Object}
 
 var callback = function(error, data, response) {
   if (error) {
@@ -32180,7 +32180,7 @@ namespace Example
             var apiInstance = new DefaultApi();
             var boardID = boardID_example;  // String | Board ID (default to null)
             var userID = userID_example;  // String | User ID (default to null)
-            var body = Object;  // Object | 
+            var body = Object;  // Object |
 
             try {
                 Object result = apiInstance.updateMember(boardID, userID, body);
@@ -32207,7 +32207,7 @@ OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('Authori
 $api_instance = new OpenAPITools\Client\Api\DefaultApi();
 $boardID = boardID_example; // String | Board ID
 $userID = userID_example; // String | User ID
-$body = Object; // Object | 
+$body = Object; // Object |
 
 try {
     $result = $api_instance->updateMember($boardID, $userID, $body);
@@ -32232,7 +32232,7 @@ $WWW::OPenAPIClient::Configuration::api_key->{'Authorization'} = 'YOUR_API_KEY';
 my $api_instance = WWW::OPenAPIClient::DefaultApi->new();
 my $boardID = boardID_example; # String | Board ID
 my $userID = userID_example; # String | User ID
-my $body = WWW::OPenAPIClient::Object::Object->new(); # Object | 
+my $body = WWW::OPenAPIClient::Object::Object->new(); # Object |
 
 eval {
     my $result = $api_instance->updateMember(boardID => $boardID, userID => $userID, body => $body);
@@ -32259,7 +32259,7 @@ openapi_client.configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 api_instance = openapi_client.DefaultApi()
 boardID = boardID_example # String | Board ID (default to null)
 userID = userID_example # String | User ID (default to null)
-body = Object # Object | 
+body = Object # Object |
 
 try:
     api_response = api_instance.update_member(boardID, userID, body)
@@ -32287,7 +32287,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -32428,7 +32428,7 @@ $(document).ready(function() {
                                   <div id="responses-Default-updateMember-schema-200" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=BoardMember stores the information of the membership of a user on a board, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=BoardMember stores the information of the membership of a user on a board, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -32490,7 +32490,7 @@ $(document).ready(function() {
                                   <div id="responses-Default-updateMember-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -32578,7 +32578,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -32588,7 +32588,7 @@ public class DefaultApiExample {
         // Create an instance of the API class
         DefaultApi apiInstance = new DefaultApi();
         String userID = userID_example; // String | User ID
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             apiInstance.updateUserConfig(userID, body);
@@ -32608,7 +32608,7 @@ public class DefaultApiExample {
     public static void main(String[] args) {
         DefaultApi apiInstance = new DefaultApi();
         String userID = userID_example; // String | User ID
-        Object body = Object; // Object | 
+        Object body = Object; // Object |
 
         try {
             apiInstance.updateUserConfig(userID, body);
@@ -32635,7 +32635,7 @@ public class DefaultApiExample {
 // Create an instance of the API class
 DefaultApi *apiInstance = [[DefaultApi alloc] init];
 String *userID = userID_example; // User ID (default to null)
-Object *body = Object; // 
+Object *body = Object; //
 
 [apiInstance updateUserConfigWith:userID
     body:body
@@ -32660,7 +32660,7 @@ BearerAuth.apiKey = "YOUR API KEY";
 // Create an instance of the API class
 var api = new FocalboardServer.DefaultApi()
 var userID = userID_example; // {String} User ID
-var body = Object; // {Object} 
+var body = Object; // {Object}
 
 var callback = function(error, data, response) {
   if (error) {
@@ -32697,7 +32697,7 @@ namespace Example
             // Create an instance of the API class
             var apiInstance = new DefaultApi();
             var userID = userID_example;  // String | User ID (default to null)
-            var body = Object;  // Object | 
+            var body = Object;  // Object |
 
             try {
                 apiInstance.updateUserConfig(userID, body);
@@ -32722,7 +32722,7 @@ OpenAPITools\Client\Configuration::getDefaultConfiguration()->setApiKey('Authori
 // Create an instance of the API class
 $api_instance = new OpenAPITools\Client\Api\DefaultApi();
 $userID = userID_example; // String | User ID
-$body = Object; // Object | 
+$body = Object; // Object |
 
 try {
     $api_instance->updateUserConfig($userID, $body);
@@ -32745,7 +32745,7 @@ $WWW::OPenAPIClient::Configuration::api_key->{'Authorization'} = 'YOUR_API_KEY';
 # Create an instance of the API class
 my $api_instance = WWW::OPenAPIClient::DefaultApi->new();
 my $userID = userID_example; # String | User ID
-my $body = WWW::OPenAPIClient::Object::Object->new(); # Object | 
+my $body = WWW::OPenAPIClient::Object::Object->new(); # Object |
 
 eval {
     $api_instance->updateUserConfig(userID => $userID, body => $body);
@@ -32770,7 +32770,7 @@ openapi_client.configuration.api_key['Authorization'] = 'YOUR_API_KEY'
 # Create an instance of the API class
 api_instance = openapi_client.DefaultApi()
 userID = userID_example # String | User ID (default to null)
-body = Object # Object | 
+body = Object # Object |
 
 try:
     api_instance.update_user_config(userID, body)
@@ -32796,7 +32796,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -32936,7 +32936,7 @@ $(document).ready(function() {
                                   <div id="responses-Default-updateUserConfig-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -33023,7 +33023,7 @@ import java.util.*;
 public class DefaultApiExample {
     public static void main(String[] args) {
         ApiClient defaultClient = Configuration.getDefaultApiClient();
-        
+
         // Configure API key authorization: BearerAuth
         ApiKeyAuth BearerAuth = (ApiKeyAuth) defaultClient.getAuthentication("BearerAuth");
         BearerAuth.setApiKey("YOUR API KEY");
@@ -33262,7 +33262,7 @@ pub fn main() {
 
                           <h2>Scopes</h2>
                           <table>
-                            
+
                           </table>
 
                           <h2>Parameters</h2>
@@ -33386,7 +33386,7 @@ The file to upload
                                   <div id="responses-Default-uploadFile-schema-200" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=FileUploadResponse is the response to a file upload, x-go-package=github.com/mattermost/focalboard/server/api};
+                                        var schemaWrapper = {description=FileUploadResponse is the response to a file upload, x-go-package=github.com/nikethai/focalboard/server/api};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -33470,7 +33470,7 @@ The file to upload
                                   <div id="responses-Default-uploadFile-schema-default" class="exampleStyle">
                                     <script>
                                       $(document).ready(function() {
-                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/mattermost/focalboard/server/model};
+                                        var schemaWrapper = {description=ErrorResponse is an error response, x-go-package=github.com/nikethai/focalboard/server/model};
                                         var schema = findNode('schema',schemaWrapper).schema;
                                         if (!schema) {
                                           schema = schemaWrapper.schema;
@@ -33514,7 +33514,7 @@ The file to upload
                   <div class="app-desc">Contact Info: <a href="api@focalboard.com">api@focalboard.com</a></div>
               </p>
                 <div class="license-info">Custom</div>
-                <div class="license-url">https://github.com/mattermost/focalboard/blob/main/LICENSE.txt</div>
+                <div class="license-url">https://github.com/nikethai/focalboard/blob/main/LICENSE.txt</div>
             </div>
           </div>
       </div>

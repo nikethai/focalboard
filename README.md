@@ -7,10 +7,10 @@
 
 # Focalboard
 
-![CI Status](https://github.com/mattermost/focalboard/actions/workflows/ci.yml/badge.svg)
-![CodeQL](https://github.com/mattermost/focalboard/actions/workflows/codeql-analysis.yml/badge.svg)
-![Dev Release](https://github.com/mattermost/focalboard/actions/workflows/dev-release.yml/badge.svg)
-![Prod Release](https://github.com/mattermost/focalboard/actions/workflows/prod-release.yml/badge.svg)
+![CI Status](https://github.com/nikethai/focalboard/actions/workflows/ci.yml/badge.svg)
+![CodeQL](https://github.com/nikethai/focalboard/actions/workflows/codeql-analysis.yml/badge.svg)
+![Dev Release](https://github.com/nikethai/focalboard/actions/workflows/dev-release.yml/badge.svg)
+![Prod Release](https://github.com/nikethai/focalboard/actions/workflows/prod-release.yml/badge.svg)
 
 ![Focalboard](website/site/static/img/hero.jpg)
 
@@ -18,7 +18,7 @@ Focalboard is an open source, multilingual, self-hosted project management tool 
 
 It helps define, organize, track and manage work across individuals and teams. Focalboard comes in three editions:
 
-* **[Focalboard plugin](https://github.com/mattermost/focalboard/releases)**: The Focalboard plugin integrates into an exsting Mattermost instance to combine project management tools with messaging and collaboration for teams of all sizes.
+* **[Focalboard plugin](https://github.com/nikethai/focalboard/releases)**: The Focalboard plugin integrates into an exsting Mattermost instance to combine project management tools with messaging and collaboration for teams of all sizes.
 
 * **[Personal Desktop](https://www.focalboard.com/docs/personal-edition/desktop/)**: A standalone, single-user [macOS](https://apps.apple.com/app/apple-store/id1556908618?pt=2114704&ct=website&mt=8), [Windows](https://www.microsoft.com/store/apps/9NLN2T0SX9VF?cid=website), or [Linux](https://www.focalboard.com/download/personal-edition/desktop/#linux-desktop) desktop app for your own todos and personal projects.
 
@@ -28,13 +28,13 @@ It helps define, organize, track and manage work across individuals and teams. F
 
 ### Mattermost Plugin
 
-After downloading and installing the plugin in the System Console, select the menu in the top left corner and select **Boards**. Access the latest releases of the focalboard plugin by downloading the `mattermost-plugin-focalboard.tar.gz` file from the releases in this repository: <https://github.com/mattermost/focalboard/releases>
+After downloading and installing the plugin in the System Console, select the menu in the top left corner and select **Boards**. Access the latest releases of the focalboard plugin by downloading the `mattermost-plugin-focalboard.tar.gz` file from the releases in this repository: <https://github.com/nikethai/focalboard/releases>
 
 ### Personal Desktop (Windows, Mac or Linux Desktop)
 
-* **Windows**: Download from the [Windows App Store](https://www.microsoft.com/store/productId/9NLN2T0SX9VF) or download `focalboard-win.zip` from the [latest release](https://github.com/mattermost/focalboard/releases), unpack, and run `Focalboard.exe`.
+* **Windows**: Download from the [Windows App Store](https://www.microsoft.com/store/productId/9NLN2T0SX9VF) or download `focalboard-win.zip` from the [latest release](https://github.com/nikethai/focalboard/releases), unpack, and run `Focalboard.exe`.
 * **Mac**: Download from the [Mac App Store](https://apps.apple.com/us/app/focalboard-insiders/id1556908618?mt=12).
-* **Linux Desktop**: Download `focalboard-linux.tar.gz` from the [latest release](https://github.com/mattermost/focalboard/releases), unpack, and open `focalboard-app`.
+* **Linux Desktop**: Download `focalboard-linux.tar.gz` from the [latest release](https://github.com/nikethai/focalboard/releases), unpack, and open `focalboard-app`.
 
 ### Personal Server
 
@@ -42,7 +42,7 @@ After downloading and installing the plugin in the System Console, select the me
 
 ### API Docs
 
-Boards API docs can be found over at <https://htmlpreview.github.io/?https://github.com/mattermost/focalboard/blob/main/server/swagger/docs/html/index.html>
+Boards API docs can be found over at <https://htmlpreview.github.io/?https://github.com/nikethai/focalboard/blob/main/server/swagger/docs/html/index.html>
 
 ### Getting started
 
@@ -125,5 +125,5 @@ Before checking in commits, run `make ci`, which is similar to the `.gitlab-ci.y
 ### Staying informed
 
 * **Changes**: See the [CHANGELOG](CHANGELOG.md) for the latest updates
-* **Bug Reports**: [File a bug report](https://github.com/mattermost/focalboard/issues/new?assignees=&labels=bug&template=bug_report.md&title=)
+* **Bug Reports**: [File a bug report](https://github.com/nikethai/focalboard/issues/new?assignees=&labels=bug&template=bug_report.md&title=)
 * **Chat**: Join the [~Focalboard community channel](https://community.mattermost.com/core/channels/focalboard)

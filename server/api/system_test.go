@@ -7,9 +7,9 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/mattermost/focalboard/server/app"
-	"github.com/mattermost/focalboard/server/model"
 	"github.com/mattermost/mattermost/server/public/shared/mlog"
+	"github.com/nikethai/focalboard/server/app"
+	"github.com/nikethai/focalboard/server/model"
 )
 
 func TestHello(t *testing.T) {

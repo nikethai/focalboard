@@ -3,8 +3,8 @@ package app
 import (
 	"testing"
 
-	"github.com/mattermost/focalboard/server/model"
 	mmModel "github.com/mattermost/mattermost/server/public/model"
+	"github.com/nikethai/focalboard/server/model"
 	"github.com/stretchr/testify/assert"
 )
 

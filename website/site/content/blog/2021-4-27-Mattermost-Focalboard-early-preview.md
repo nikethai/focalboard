@@ -30,10 +30,10 @@ This feature is currently in Early Preview. Please do not store any critical or 
 This is also not the final form of the integration, but meant to start us thinking about how an integration should work. Have an idea or feedback? Let us know on the [Focalboard channel](https://community.mattermost.com/core/channels/focalboard).
 
 Seriously though, it should be functional for basic project management:
-All available features should work (please [file a bug](https://github.com/mattermost/focalboard/issues/new/choose) if they don’t)
+All available features should work (please [file a bug](https://github.com/nikethai/focalboard/issues/new/choose) if they don’t)
 It should be secure (you should not be able to access workspaces in channels you don’t belong to)
 
-### Please [file bugs](https://github.com/mattermost/focalboard/issues/new/choose) for any issues. 🐞
+### Please [file bugs](https://github.com/nikethai/focalboard/issues/new/choose) for any issues. 🐞
 
 ## Tips and Tricks:
 1. Check out the [Focalboard user’s guide](https://www.focalboard.com/guide/user/) to get started
@@ -56,8 +56,8 @@ Please [get in touch](https://www.focalboard.com/feedback/)!
 ## Want to Contribute?
 We’d love your help!
 
-Help shape the future of Focalboard by contributing ideas, bug reports, and code. Check out our [community page](https://mattermost.github.io/focalboard/) or [GitHub repo](https://github.com/mattermost/focalboard) to get started.
+Help shape the future of Focalboard by contributing ideas, bug reports, and code. Check out our [community page](https://mattermost.github.io/focalboard/) or [GitHub repo](https://github.com/nikethai/focalboard) to get started.
 
-You can also browse GitHub tickets with a “[help wanted](https://github.com/mattermost/focalboard/issues?q=is%3Aissue+is%3Aopen+label%3A%22Up+for+grabs%22)” tag to see what projects are available.
+You can also browse GitHub tickets with a “[help wanted](https://github.com/nikethai/focalboard/issues?q=is%3Aissue+is%3Aopen+label%3A%22Up+for+grabs%22)” tag to see what projects are available.
 
-Like what you see? Please consider giving Focalboard a [GitHub Star](https://github.com/mattermost/focalboard)!
+Like what you see? Please consider giving Focalboard a [GitHub Star](https://github.com/nikethai/focalboard)!

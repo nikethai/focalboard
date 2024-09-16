@@ -6,7 +6,7 @@
 //	Host: localhost
 //	BasePath: /api/v2
 //	Version: 2.0.0
-//	License: Custom https://github.com/mattermost/focalboard/blob/main/LICENSE.txt
+//	License: Custom https://github.com/nikethai/focalboard/blob/main/LICENSE.txt
 //	Contact: Focalboard<api@focalboard.com> https://www.focalboard.com
 //
 //	Consumes:

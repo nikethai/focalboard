@@ -1,7 +1,7 @@
 package ws
 
 import (
-	"github.com/mattermost/focalboard/server/model"
+	"github.com/nikethai/focalboard/server/model"
 )
 
 // UpdateCategoryMessage is sent on block updates.

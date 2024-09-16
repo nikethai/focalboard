@@ -19,11 +19,11 @@ Download Focalboard from the [Microsoft App Store](https://www.microsoft.com/sto
 
 <a href="https://www.microsoft.com/store/apps/9NLN2T0SX9VF?cid=website"><img src="/img/ms-app-store.svg" style="max-height: 40px;" /></a>
 
-Or download `focalboard-win.zip` from the latest [release on GitHub](https://github.com/mattermost/focalboard/releases).
+Or download `focalboard-win.zip` from the latest [release on GitHub](https://github.com/nikethai/focalboard/releases).
 
 #### Linux Desktop
 
 To install Personal Desktop for Linux
-1. Download `focalboard-linux.tar.gz` from the latest [release on GitHub](https://github.com/mattermost/focalboard/releases)
+1. Download `focalboard-linux.tar.gz` from the latest [release on GitHub](https://github.com/nikethai/focalboard/releases)
 2. Unpack the .tar.gz archive
 4. Open `focalboard-app` from within the `focalboard-app` folder

@@ -3,8 +3,8 @@ package oauth
 import (
 	"context"
 	"encoding/json"
-	"github.com/mattermost/focalboard/server/model"
-	"github.com/mattermost/focalboard/server/services/config"
+	"github.com/nikethai/focalboard/server/model"
+	"github.com/nikethai/focalboard/server/services/config"
 	"github.com/pkg/errors"
 	"golang.org/x/oauth2"
 	"io"

@@ -4,8 +4,8 @@
 package mmpermissions
 
 import (
-	"github.com/mattermost/focalboard/server/model"
-	"github.com/mattermost/focalboard/server/services/permissions"
+	"github.com/nikethai/focalboard/server/model"
+	"github.com/nikethai/focalboard/server/services/permissions"
 
 	mmModel "github.com/mattermost/mattermost/server/public/model"
 	"github.com/mattermost/mattermost/server/public/shared/mlog"

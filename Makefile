@@ -14,9 +14,9 @@ endif
 
 BUILD_TAGS += json1 sqlite3
 
-LDFLAGS += -X "github.com/mattermost/focalboard/server/model.BuildNumber=$(BUILD_NUMBER)"
-LDFLAGS += -X "github.com/mattermost/focalboard/server/model.BuildDate=$(BUILD_DATE)"
-LDFLAGS += -X "github.com/mattermost/focalboard/server/model.BuildHash=$(BUILD_HASH)"
+LDFLAGS += -X "github.com/nikethai/focalboard/server/model.BuildNumber=$(BUILD_NUMBER)"
+LDFLAGS += -X "github.com/nikethai/focalboard/server/model.BuildDate=$(BUILD_DATE)"
+LDFLAGS += -X "github.com/nikethai/focalboard/server/model.BuildHash=$(BUILD_HASH)"
 
 RACE = -race
 
@@ -42,12 +42,12 @@ templates-archive: ## Build templates archive file
 	cd server/assets/build-template-archive; go run -tags '$(BUILD_TAGS)' main.go --dir="../templates-boardarchive" --out="../templates.boardarchive"
 
 server: ## Build server for local environment.
-	$(eval LDFLAGS += -X "github.com/mattermost/focalboard/server/model.Edition=dev")
+	$(eval LDFLAGS += -X "github.com/nikethai/focalboard/server/model.Edition=dev")
 	cd server; go build -ldflags '$(LDFLAGS)' -tags '$(BUILD_TAGS)' -o ../bin/focalboard-server ./main
 
 server-mac: ## Build server for Mac.
 	mkdir -p bin/mac
-	$(eval LDFLAGS += -X "github.com/mattermost/focalboard/server/model.Edition=mac")
+	$(eval LDFLAGS += -X "github.com/nikethai/focalboard/server/model.Edition=mac")
 ifeq ($(FB_PROD),)
 	cd server; env GOOS=darwin GOARCH=$(MAC_GO_ARCH) go build -ldflags '$(LDFLAGS)' -tags '$(BUILD_TAGS)' -o ../bin/mac/focalboard-server ./main
 else
@@ -57,20 +57,20 @@ endif
 
 server-linux: ## Build server for Linux.
 	mkdir -p bin/linux
-	$(eval LDFLAGS += -X "github.com/mattermost/focalboard/server/model.Edition=linux")
-	cd server; env GOOS=linux GOARCH=$(arch) go build -ldflags '$(LDFLAGS)' -tags '$(BUILD_TAGS)' -o ../bin/linux/focalboard-server ./main
+	$(eval LDFLAGS += -X "github.com/nikethai/focalboard/server/model.Edition=linux")
+	cd server; env GOOS=linux GOARCH=amd64 go build -ldflags '$(LDFLAGS)' -tags '$(BUILD_TAGS)' -o ../bin/linux/focalboard-server ./main
 
 server-docker: ## Build server for Docker Architectures.
 	mkdir -p bin/docker
-	$(eval LDFLAGS += -X "github.com/mattermost/focalboard/server/model.Edition=linux")
+	$(eval LDFLAGS += -X "github.com/nikethai/focalboard/server/model.Edition=linux")
 	cd server; env GOOS=$(os) GOARCH=$(arch) go build -ldflags '$(LDFLAGS)' -tags '$(BUILD_TAGS)' -o ../bin/docker/focalboard-server ./main
 
 server-win: ## Build server for Windows.
-	$(eval LDFLAGS += -X "github.com/mattermost/focalboard/server/model.Edition=win")
+	$(eval LDFLAGS += -X "github.com/nikethai/focalboard/server/model.Edition=win")
 	cd server; env GOOS=windows GOARCH=amd64 go build -ldflags '$(LDFLAGS)' -tags '$(BUILD_TAGS)' -o ../bin/win/focalboard-server.exe ./main
 
 server-dll: ## Build server as Windows DLL.
-	$(eval LDFLAGS += -X "github.com/mattermost/focalboard/server/model.Edition=win")
+	$(eval LDFLAGS += -X "github.com/nikethai/focalboard/server/model.Edition=win")
 	cd server; env GOOS=windows GOARCH=amd64 go build -ldflags '$(LDFLAGS)' -tags '$(BUILD_TAGS)' -buildmode=c-shared -o ../bin/win-dll/focalboard-server.dll ./main
 
 server-linux-package: server-linux webapp

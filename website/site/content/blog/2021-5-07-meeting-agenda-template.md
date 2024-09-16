@@ -11,7 +11,7 @@ community: chen-i.lim
 
 ### Meeting Agenda Template
 
-We've been using Focalboard on the [community server](https://github.com/mattermost/focalboard/discussions/349) for a few weeks now, and a few unexpected use-cases have emerged. One of them is using Focalboard for recurring meeting agendas, like team meetings and 1:1s.
+We've been using Focalboard on the [community server](https://github.com/nikethai/focalboard/discussions/349) for a few weeks now, and a few unexpected use-cases have emerged. One of them is using Focalboard for recurring meeting agendas, like team meetings and 1:1s.
 
 <img width="846" alt="Meeting Agenda Template" src="https://user-images.githubusercontent.com/46905241/117484632-35b60b00-af1c-11eb-82c7-89e753a160cf.png">
 
